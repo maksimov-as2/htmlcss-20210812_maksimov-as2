@@ -11,11 +11,7 @@
     font-size: 16px;
     line-height: 19px;
     text-align: center;
-    transition: 
-        color var(--transition-time) ease-in-out,
-        opacity var(--transition-time) ease-in-out, 
-        background-color var(--transition-time),
-        border-color var(--transition-time);
+    transition: all var(--transition-time) ease-in-out;
 }
 
 .btn-primary {
@@ -28,7 +24,7 @@
 }
 
 .btn-primary:disabled{
-    cursor: var(--disabled-cursor-type);
+    pointer-events: none;
     opacity: 0.5;
 }
 
@@ -42,7 +38,7 @@
 }
 
 .btn-secondary:disabled{
-    cursor: var(--disabled-cursor-type);
+    pointer-events: none;
     opacity: 0.5;
 }
 
@@ -58,6 +54,6 @@
 
 .btn-alternate:disabled{
     color: var(--grey-4);
-    cursor: var(--disabled-cursor-type);
+    pointer-events: none;
     opacity: 0.5;
 }
