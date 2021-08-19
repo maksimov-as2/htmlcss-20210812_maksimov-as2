@@ -12,7 +12,9 @@
     --dark-blue: #2342C0;
     --red: #F03D3E;
     --grey-1: #F8F9FA;
+    --grey-1a: #E5E5E5;
     --grey-2: #DDE2E5;
+    --grey-2a: #C4C4C4;
     --grey-3: #ACB5BD;
     --grey-4: #495057;
 
@@ -26,8 +28,67 @@
     --border-black: 1px solid var(--black);
 
     --transition-time: 200ms;
+    --default-font-color: var(--black);
 }   
 
 * {
     font-family: 'Inter', sans-serif;
+}
+
+h1 {
+    font-size: 50px;
+    line-height: 64px;
+    font-weight: 500;
+    font-style: normal;
+    color: var(--default-font-color);
+}
+
+h2 {
+    font-size: 38px;
+    line-height: 48px;
+    font-weight: 500;
+    font-style: normal;
+    color: var(--default-font-color);
+}
+
+h3 {
+    font-size: 28px;
+    line-height: 38px;
+    font-weight: normal;
+    font-style: normal;
+    color: var(--default-font-color);
+}
+
+h4 {
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: normal;
+    font-style: normal;
+    color: var(--default-font-color);
+}
+
+h5 {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--default-font-color);
+}
+
+p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--default-font-color);
+}
+
+small {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    color: var(--default-font-color);
 }
