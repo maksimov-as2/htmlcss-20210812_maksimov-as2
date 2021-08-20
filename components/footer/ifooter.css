@@ -1,0 +1,14 @@
+.ifooter {
+    background: var(--white);
+    text-align: center;
+    padding: 71px;
+}
+
+.ifooter__title {
+    margin: 0 auto 32px auto;
+}
+
+.ifooter__description {
+    margin: 32px auto 32px auto;
+    width: 640px;
+}
