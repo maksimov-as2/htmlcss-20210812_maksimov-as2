@@ -15,7 +15,7 @@
     width: 64px;
     height: 64px;
     border-radius: 64px;
-    background: var(--grey-3);
+    background: var(--grey-2);
 }
 
 .skltn__title {
@@ -25,8 +25,8 @@
 
 .skltn__row {
     height: 20px;
-    background: var(--grey-3);
     margin: 8px;
+    background: linear-gradient(92.51deg, #DDE2E5 6.44%, #E2E6E8 38.47%, #F3F5F5 56.48%, #E3E7EA 77.5%, #DDE2E5 102.52%);
 }
 
 .skltn__row_short {
