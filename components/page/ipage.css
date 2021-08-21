@@ -1,6 +1,9 @@
 .ipage {
     box-sizing: border-box;
-    max-width: 1440px;
     background: var(--white);
+}
+
+.ipage__box {
+    max-width: 1110px;
     margin: 0 auto;
 }

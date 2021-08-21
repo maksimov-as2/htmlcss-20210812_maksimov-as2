@@ -1,9 +1,8 @@
 .iheader {
-    background: var(--white);
+    padding: 96px 0 76px;
+    background-color: var(--white);
 }
 
 .iheader__title {
-    margin: 0;
-    padding: 96px 160px 77px;
     color: var(--black);
 }

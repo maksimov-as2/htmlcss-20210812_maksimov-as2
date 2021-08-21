@@ -1,14 +1,15 @@
 .ifooter {
-    background: var(--white);
-    text-align: center;
-    padding: 71px;
+    padding: 71px 0 136px;
+    background-color: var(--white);
 }
 
 .ifooter__title {
-    margin: 0 auto 32px auto;
+    text-align: center;
+    margin-top: 0;
 }
 
 .ifooter__description {
-    margin: 32px auto 32px auto;
-    width: 640px;
+    text-align: center;
+    max-width: 640px;
+    margin: 0 auto;
 }
