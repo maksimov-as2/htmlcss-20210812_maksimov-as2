@@ -44,20 +44,19 @@
 }
 
 .hgm__graph {
-    flex-grow: 1;
-    gap: 0.1px;
+    height:100px;
+    gap: 1px;
     display:flex;
     flex-direction:row;
     align-items: flex-end;
 }
 
 .hgm__gline {
-    margin: 1px;
     flex-grow: 1;
     background: var(--blue);
 }
 
-.hgm__link a{ /* Это временный стиль, поскольку изменения в глобальном css находятся в ранее отправленном ПР, который ещё не одобрен */
+.hgm__link {
     text-decoration: none;
     color: var(--blue);
 }
