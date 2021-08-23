@@ -1,0 +1,16 @@
+.ifooter {
+    padding: 71px 0 136px;
+    background-color: var(--white);
+}
+
+.ifooter__title {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 32px;
+}
+
+.ifooter__description {
+    text-align: center;
+    max-width: 640px;
+    margin: 0 auto;
+}

@@ -1,4 +1,5 @@
 @import './normalize.css';
+@import './typography.css';
 @import '../fonts/fonts.css';
 
 :root {
@@ -12,7 +13,9 @@
     --dark-blue: #2342C0;
     --red: #F03D3E;
     --grey-1: #F8F9FA;
+    --grey-1a: #E5E5E5;
     --grey-2: #DDE2E5;
+    --grey-2a: #C4C4C4;
     --grey-3: #ACB5BD;
     --grey-4: #495057;
 
@@ -26,6 +29,7 @@
     --border-black: 1px solid var(--black);
 
     --transition-time: 200ms;
+    --default-font-color: var(--black);
 }   
 
 * {

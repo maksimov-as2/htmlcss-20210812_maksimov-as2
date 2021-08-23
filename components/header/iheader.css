@@ -1,0 +1,8 @@
+.iheader {
+    padding: 96px 0 76px;
+    background-color: var(--white);
+}
+
+.iheader__title {
+    color: var(--black);
+}
