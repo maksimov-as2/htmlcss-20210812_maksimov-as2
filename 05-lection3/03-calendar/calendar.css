@@ -1,17 +1,13 @@
 .ical_preview {
     width: 304px;
-    height: 324px;
 }
 
 .ical {
     padding: 28px;
-    gap: 24px;
     background: var(--white);
     border: 1px solid var(--grey-3);
     box-sizing: border-box;
     border-radius: 8px;
-    display: flex;
-    flex-direction: column;
 }
 
 .ical__title {
@@ -20,17 +16,35 @@
     font-size: 20px;
     line-height: 24px;
     color: #334D6E;
-    align-self: center;
+    text-align: center;
+    padding-bottom:24px;
 }
 
-.ical__legend {
+.ical__wrapper {
+    position: relative;
+    padding-bottom: 100%;
+}
+
+.ical__grid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(6, 1fr); /* В лекции была сетка 7x7, но в данной конфигурации (Октябрь 2019) остается пустой ряд */
+    justify-items: stretch;
+    align-items: stretch;
+}
+
+.ical__item {
+    display: grid;
     justify-items: center;
     align-items: center;
 }
 
-.ical__legend-item {
+.ical__item_header {
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -38,13 +52,7 @@
     color: #90A0B7;
 }
 
-.ical__data-item {
-    display: grid;
-    justify-items: center;
-    align-items: center;
-}
-
-.ical__data-text {
+.ical__item_data {
     font-family: Source Sans Pro;
     font-style: normal;
     font-weight: normal;
@@ -53,22 +61,12 @@
     color: #334D6E;
 }
 
-.ical__data-item__selection-point {
+.ical__item_selection-point {
     background: var(--blue);
     color: var(--white);
 }
 
-.ical__data-item__selection-body {
+.ical__item_selection-body {
     background: rgba(160, 177, 245, 0.2);
 }
-
-.ical__data {
-    flex-grow: 1;
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: repeat(5,1fr);
-    justify-items: stretch;
-    align-items: stretch;
- }
-
  
