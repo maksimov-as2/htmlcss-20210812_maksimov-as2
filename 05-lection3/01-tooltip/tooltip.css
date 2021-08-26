@@ -1,9 +1,9 @@
 .tlp {
     display: inline-block;
+    position: relative;
 }
 
 .tlp__icon {
-    display:relative;
     width: 24px;
     height: 24px;
 }
@@ -30,7 +30,6 @@
     display: none;
     align-items: center;
     justify-items: center;
-    margin-bottom: 8px;
     white-space: nowrap;
 }
 
