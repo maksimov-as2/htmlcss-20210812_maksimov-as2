@@ -1,6 +1,6 @@
 .ipage {
     box-sizing: border-box;
-    background: #F9FAFC;
+    background: var(--grey-1b);
     display: grid;
     grid-template-rows: auto 1fr auto;
     height: 100%;
