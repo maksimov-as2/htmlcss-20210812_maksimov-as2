@@ -1,6 +1,10 @@
 .ipage {
     box-sizing: border-box;
-    background: var(--white);
+    background: var(--grey-1b);
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100%;
+    row-gap: 32px;
 }
 
 .ipage__box {

@@ -1,6 +1,12 @@
 .iheader {
     padding: 96px 0 76px;
     background-color: var(--white);
+    border-bottom: 1px solid var(--grey-2);
+}
+
+.iheader_slim {
+    height: 82px;
+    padding: 0;
 }
 
 .iheader__title {

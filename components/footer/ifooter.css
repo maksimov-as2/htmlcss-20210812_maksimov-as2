@@ -1,6 +1,7 @@
 .ifooter {
     padding: 71px 0 136px;
     background-color: var(--white);
+    border-top: 1px solid var(--grey-2);
 }
 
 .ifooter__title {
