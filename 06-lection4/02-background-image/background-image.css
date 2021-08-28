@@ -1,0 +1,23 @@
+.bimg {
+    background-image: url( public/forest_400.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media all and (min-width:400px) {
+    .bimg {
+        background-image: url( public/forest_768.jpg);
+    }
+}
+
+@media all and (min-width:768px) {
+    .bimg {
+        background-image: url( public/forest_1024.jpg);
+    }
+}
+
+@media all and (min-width:1024px) {
+    .bimg {
+        background-image: url( public/forest_2560.jpg);
+    }
+}
