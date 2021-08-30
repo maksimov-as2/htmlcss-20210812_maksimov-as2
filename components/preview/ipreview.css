@@ -1,5 +1,12 @@
 .ipreview {
+    justify-content: center;
     display: flex;
     flex-wrap: wrap;
     gap: 28px;
+}
+
+@media all and (max-width:768px) {
+    .ipreview {
+        gap: 16px;
+    }  
 }

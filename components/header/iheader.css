@@ -5,8 +5,9 @@
 }
 
 .iheader_slim {
-    height: 82px;
-    padding: 0;
+    background-color: unset;
+    border-bottom: unset;
+    padding: 24px 0px 64px;
 }
 
 .iheader__title {
@@ -24,4 +25,24 @@
     display: grid;
     grid-template-columns: 32px 32px 32px;
     column-gap: 8px;
+}
+
+@media all and (max-width:768px) {
+    .iheader {
+        padding: 16px 0px 64px;
+    }
+    .iheader__logo {
+        margin: 0 auto;
+    }
+    .iheader__title {
+        margin-top: 48px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 28px;
+        line-height: 38px;
+        color: var(--grey-4);
+    }
+    .iheader_slim {
+        padding: 16px 0px 16px;
+    }
 }
