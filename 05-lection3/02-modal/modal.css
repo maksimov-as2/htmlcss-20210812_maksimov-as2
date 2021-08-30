@@ -42,8 +42,8 @@
     position: absolute;
     right: 16px;
     top: 16px;
-    width: 16px;
-    height: 16px;
+    width: 24px;
+    height: 24px;
     color: var(--grey-4);
     padding: 0;
     border: none;
@@ -51,4 +51,9 @@
     color: inherit;
     background-color: transparent;
     cursor: pointer;
+}
+
+.mw__close-icon {
+    width: 24px;
+    height: 24px;
 }

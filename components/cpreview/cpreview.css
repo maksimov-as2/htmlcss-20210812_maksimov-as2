@@ -1,6 +1,7 @@
 .cpreview {
     display:grid;
     grid-template-columns: auto 1fr;
+    grid-template-areas: "nav content";
     column-gap: 56px;
 }
 
@@ -9,7 +10,19 @@
 }
 
 .cpreview__content {
+    grid-area: content;
     background: var(--white);
     box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
     border-radius: 12px;
+}
+
+@media all and (max-width:768px) {
+    .cpreview {
+        grid-template-columns: 0 1fr ;
+        column-gap: 0;  
+    }
+    .cpreview__content {
+        border-radius: 0;
+        box-shadow: unset;
+    }
 }

@@ -4,16 +4,24 @@
     <head>
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./accordion.css">
+        <style>
+            body {
+                width:728px;
+            }
+        </style>
     </head>
     <body>
         <div class="accordion">
             <details class="accordion__item">
                 <summary class="accordion__summary">
-                    <p>Accordion item</p>
+                    <div class="accordion__title">Accordion item</div>
+                    <svg class="accordion__icon">
+                        <use xlink:href="../../assets/images/svg-sprite.svg#arrow"></use>
+                    </svg> 
                 </summary>
-                <p class="accordion__hidden">
+                <div class="accordion__hidden">
                     Hidden content
-                </p>
+                </div>
             </details>
         </div>
     </body>
