@@ -4,8 +4,58 @@
     <head>
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./radio.css">
+        <style>
+            html {
+                height: 100%;
+            }
+            body {
+                display: grid;
+                align-items: center;
+                justify-items: center;
+                height: 100%;
+                background: white;
+            }
+        </style>
     </head>
     <body>
-
+        <label>
+            <div class="rad">
+                <input type="radio" class="rad__native" name="param1">
+                <div class="rad__override">
+                    <div class="rad__icon-box">
+                        <div class="rad__checked-icon"></div>
+                    </div>
+                    <div class="rad__text">
+                        Default
+                    </div>
+                </div>
+            </div>
+        </label>
+        <label>
+            <div class="rad">
+                <input type="radio" class="rad__native" name="param1" checked>
+                <div class="rad__override">
+                    <div class="rad__icon-box">
+                        <div class="rad__checked-icon"></div>
+                    </div>
+                    <div class="rad__text">
+                        Selected
+                    </div>
+                </div>
+            </div>
+        </label>
+        <label>
+            <div class="rad">
+                <input type="radio" class="rad__native" name="param1" disabled>
+                <div class="rad__override">
+                    <div class="rad__icon-box">
+                        <div class="rad__checked-icon"></div>
+                    </div>
+                    <div class="rad__text">
+                        Disabled
+                    </div>
+                </div>
+            </div>
+        </label>
     </body>
 </html>
