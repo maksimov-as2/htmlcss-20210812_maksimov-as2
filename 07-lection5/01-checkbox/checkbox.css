@@ -12,6 +12,8 @@
     width: 0px;
     height: 0px;
     opacity: 0;
+    pointer-events: none;
+    outline: none;
 }
 
 .cbx__icon-box {
@@ -33,7 +35,7 @@
 }
 
 .cbx__text {
-    margin-left: 8px;
+    margin-left: 12px;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -46,7 +48,7 @@
     border-color: var(--blue);
 }
 
-.cbx__native:checked ~ .cbx__override .cbx__icon-box .cbx__checked-icon  {
+.cbx__native:checked ~ .cbx__override .cbx__checked-icon  {
     display: block;
 }
 
