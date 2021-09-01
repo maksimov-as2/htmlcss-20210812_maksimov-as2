@@ -12,6 +12,8 @@
     width: 0px;
     height: 0px;
     opacity: 0;
+    pointer-events: none;
+    outline: none;
 }
 
 .rad__icon-box {
@@ -34,7 +36,7 @@
 }
 
 .rad__text {
-    margin-left: 8px;
+    margin-left: 12px;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -42,7 +44,7 @@
     color: var(--grey-4);
 }
 
-.rad__native:checked ~ .rad__override .rad__icon-box .rad__checked-icon  {
+.rad__native:checked ~ .rad__override .rad__checked-icon  {
     display: block;
 }
 
