@@ -1,0 +1,83 @@
+.tgl {
+    box-sizing: border-box;
+}
+
+.tgl__override {
+    display: flex;
+    cursor: pointer;
+}
+
+.tgl__native {
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    opacity: 0;
+    pointer-events: none;
+    outline: none;
+}
+
+.tgl__icon-box {
+    position: relative;
+    --icon-box-height: 28px;
+    width: 52px;
+    height: var(--icon-box-height);
+    background: var(--white);
+    border: 1px solid var(--grey-2);
+    border-radius: 16px;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.tgl__checked-icon {
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    --icon-diam: calc(var(--icon-box-height) - 2px);
+    color: var(--grey-2);
+    background-color: var(--grey-2);
+    width: var(--icon-diam);
+    height: var(--icon-diam);
+    border-radius: var(--icon-diam);
+}
+
+.tgl__text {
+    margin-left: 12px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--grey-4);
+    display: grid;
+    align-items: center;
+}
+
+.tgl__native:checked ~ .tgl__override .tgl__checked-icon  {
+    left: calc(100% - 1px);
+    transform: translateX(-100%);
+    background: var(--white);
+    border-color: var(--white);
+}
+
+.tgl__native:checked ~ .tgl__override .tgl__icon-box  {
+    background: var(--blue);
+    border-color: var(--blue);
+}
+
+.tgl__native:disabled ~ .tgl__override  {
+    pointer-events: none;
+}
+
+.tgl__native:disabled ~ .tgl__override .tgl__icon-box  {
+    background: var(--grey-2);
+    border-color: var(--grey-2);
+}
+
+.tgl__native:disabled ~ .tgl__override .tgl__checked-icon  {
+    background: var(--grey-3);
+    border-color: var(--grey-3);
+}
+
+.tgl__native:focus ~ .tgl__override .tgl__text  {
+    text-decoration: underline;
+}
