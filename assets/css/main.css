@@ -13,6 +13,7 @@
     --purple: #7048E8;
     --dark-purple: #5028C6;
     --blue: #4263EB;
+    --blue-1: #374FC7;
     --dark-blue: #2342C0;
     --red: #F03D3E;
     --grey-1: #F8F9FA;
@@ -26,7 +27,7 @@
     --grey-5a: #90A0B7;
 
     --error: var(--red);
-    --success: var(--blue);
+    --success: var(--blue-1);
 
     --primary: var(--blue);
     --secondary: var(--purple);
