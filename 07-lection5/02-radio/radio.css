@@ -1,0 +1,66 @@
+.rad {
+    box-sizing: border-box;
+}
+
+.rad__override {
+    display: flex;
+    cursor: pointer;
+}
+
+.rad__native {
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    opacity: 0;
+    pointer-events: none;
+    outline: none;
+}
+
+.rad__icon-box {
+    width: 24px;
+    height: 24px;
+    border: 2px solid var(--blue);
+    border-radius: 24px;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.rad__checked-icon {
+    display: none;
+    color: var(--blue);
+    background-color: var(--blue);
+    width: 18px;
+    height: 18px;
+    border-radius: 18px;
+}
+
+.rad__text {
+    margin-left: 12px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--grey-4);
+}
+
+.rad__native:checked ~ .rad__override .rad__checked-icon  {
+    display: block;
+}
+
+.rad__native:disabled ~ .rad__override  {
+    pointer-events: none;
+}
+
+.rad__native:disabled ~ .rad__override .rad__icon-box  {
+    background: var(--grey-2);
+    border-color: var(--grey-2);
+}
+
+.rad__native:disabled ~ .rad__override .rad__text  {
+    color: var(--grey-2);
+}
+
+.rad__native:focus ~ .rad__override .rad__text  {
+    text-decoration: underline;
+}
