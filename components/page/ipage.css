@@ -4,7 +4,6 @@
     display: grid;
     grid-template-rows: auto 1fr auto;
     height: 100%;
-    row-gap: 32px;
 }
 
 .ipage__box {
@@ -20,17 +19,14 @@
 @media all and (max-width:1140px) { /*prevent touch ipage to screen borders */
     .ipage__box {
         padding: 0 16px;
-        row-gap: 16px;
     }
     .ipage__box-slim-mobile {
         padding: 0 16px;
-        row-gap: 16px;
     }
 }
 
 @media all and (max-width:768px) {
     .ipage__box-slim-mobile {
         padding: 0;
-        row-gap: 0;
     }
 }
