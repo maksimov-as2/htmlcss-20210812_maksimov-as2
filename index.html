@@ -2,6 +2,7 @@
 <!-- Главная страница -->
 <html lang="ru">
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./assets/css/main.css">
         <link rel="stylesheet" href="./components/header/iheader.css">
         <link rel="stylesheet" href="./components/page/ipage.css">
@@ -9,6 +10,7 @@
         <link rel="stylesheet" href="./components/footer/ifooter.css">
         <link rel="stylesheet" href="./components/preview/ipreview.css">
         <link rel="stylesheet" href="./components/card/icard.css">
+        <link rel="stylesheet" href="./components/tabs/tabs.css">
     </head>
     <body>
         <div class="ipage">
@@ -23,13 +25,37 @@
                 </div>
             </header>
             <main class="imain">
-                <div class="ipage__box ipreview">
-                    <div class="icard"></div>
-                    <div class="icard"></div>
-                    <div class="icard"></div>
-                    <div class="icard"></div>
-                    <div class="icard"></div>
-                    <div class="icard"></div>
+                <div class="tabs">
+                    
+                    <input id="all-tab" class="tabs__native-control tabs__native-control_1" name="t" type="radio" checked>
+                    <input id="elements-tab" class="tabs__native-control tabs__native-control_2" name="t" type="radio">
+                    <input id="containers-tab" class="tabs__native-control tabs__native-control_3" name="t" type="radio">
+                    <input id="templates-tab" class="tabs__native-control tabs__native-control_4" name="t" type="radio">
+
+                    <div class="tabs__header">
+                        <div class="ipage__box tabs__scroller">
+                            <label class="tabs__item tabs__item-marker_1" for="all-tab">
+                                All components
+                            </label>
+                            <label class="tabs__item tabs__item-marker_2" for="elements-tab">
+                                Elements
+                            </label>
+                            <label class="tabs__item tabs__item-marker_3" for="containers-tab">
+                                Containers
+                            </label>
+                            <label class="tabs__item tabs__item-marker_4" for="templates-tab">
+                                Templates
+                            </label>
+                        </div>
+                    </div>
+                    <div class="ipreview ipage__box tabs__content">
+                        <div class="icard tabs__elements-tab-content"></div>
+                        <div class="icard tabs__elements-tab-content"></div>
+                        <div class="icard tabs__containers-tab-content"></div>
+                        <div class="icard tabs__containers-tab-content"></div>
+                        <div class="icard tabs__templates-tab-content"></div>
+                        <div class="icard tabs__templates-tab-content"></div>
+                    </div>
                 </div>
             </main>
             <footer class="ifooter">

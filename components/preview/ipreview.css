@@ -1,4 +1,6 @@
 .ipreview {
+    margin-top: 32px;
+    margin-bottom: 32px;
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
@@ -8,5 +10,6 @@
 @media all and (max-width:768px) {
     .ipreview {
         gap: 16px;
+        margin-top: 16px;
     }  
 }
