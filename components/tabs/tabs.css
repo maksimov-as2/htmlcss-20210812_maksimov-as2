@@ -1,21 +1,20 @@
 .tabs {
     box-sizing: border-box;
     position: relative;
-    overflow: hidden;
 }
 
 .tabs__header {
     background: var(--white);
     border-bottom: 1px solid var(--grey-2);
     width: 100vw;
+    overflow-x: auto;
+    scrollbar-width: none;
 }
 
 .tabs__scroller {
     display: flex;
     gap: 40px;
     align-items: end;
-    overflow-x: scroll;
-    scrollbar-width: none;
 }
 
 .tabs__native-control {
