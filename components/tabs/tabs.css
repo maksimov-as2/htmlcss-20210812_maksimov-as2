@@ -1,17 +1,21 @@
 .tabs {
     box-sizing: border-box;
     position: relative;
+    overflow: hidden;
 }
 
 .tabs__header {
     background: var(--white);
     border-bottom: 1px solid var(--grey-2);
+    width: 100vw;
 }
 
 .tabs__scroller {
     display: flex;
     gap: 40px;
     align-items: end;
+    overflow-x: scroll;
+    scrollbar-width: none;
 }
 
 .tabs__native-control {
@@ -25,20 +29,13 @@
 
 .tabs__item {
     display: inline-block;
-}
-
-.tabs__item-text {
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 24px;
     color: var(--black);
     white-space: nowrap;
-}
-
-.tabs__item-marker {
-    height: 5px;
-    background: transparent;
+    border-bottom: 5px solid transparent;
 }
 
 .tabs__elements-tab-content {
@@ -55,7 +52,7 @@
 
 
 .tabs__native-control_1:checked ~ .tabs__header .tabs__item-marker_1 {
-    background: var(--black);
+    border-bottom-color: var(--black);
 }
 
 .tabs__native-control_1:checked ~ .tabs__content .tabs__elements-tab-content {
@@ -72,7 +69,7 @@
 
 
 .tabs__native-control_2:checked ~ .tabs__header .tabs__item-marker_2 {
-    background: var(--black);
+    border-bottom-color: var(--black);
 }
 
 .tabs__native-control_2:checked ~ .tabs__content .tabs__elements-tab-content {
@@ -81,7 +78,7 @@
 
 
 .tabs__native-control_3:checked ~ .tabs__header .tabs__item-marker_3 {
-    background: var(--black);
+    border-bottom-color: var(--black);
 }
 
 .tabs__native-control_3:checked ~ .tabs__content .tabs__containers-tab-content {
@@ -90,7 +87,7 @@
 
 
 .tabs__native-control_4:checked ~ .tabs__header .tabs__item-marker_4 {
-    background: var(--black);
+    border-bottom-color: var(--black);
 }
 
 .tabs__native-control_4:checked ~ .tabs__content .tabs__templates-tab-content {
