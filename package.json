@@ -5,7 +5,8 @@
   "scripts": {
     "test": "cross-env NODE_ENV=test mocha --no-warnings --ignore=node_modules/** **/*.test.js",
     "build-index-css": "postcss src/styles/index.scss -o build/index.css",
-    "build-cpage-css": "postcss src/styles/cpage.scss -o build/cpage.css"
+    "build-cpage-css": "postcss src/styles/cpage.scss -o build/cpage.css",
+    "lint": "stylelint **/*.scss"
   },
   "husky": {
     "hooks": {
@@ -35,12 +36,14 @@
     "postcss-scss": "^4.0.0",
     "postcss-strip-inline-comments": "^0.1.5",
     "precss": "^4.0.0",
-    "stylelint": "^13.13.1"
+    "stylelint": "^13.13.1",
+    "stylelint-config-recommended-scss": "^4.3.0"
   },
   "dependencies": {
     "husky": "^6.0.0",
     "lint-staged": "^10.5.4",
     "normalize.css": "^8.0.1",
-    "prettier": "^2.2.1"
+    "prettier": "2.4.0",
+    "stylelint-scss": "^3.20.1"
   }
 }

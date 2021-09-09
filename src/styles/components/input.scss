@@ -3,6 +3,28 @@
     box-sizing: border-box;
     position: relative;
 
+    &__icon-success {
+        position: absolute;
+        right: 18px;
+        top: 50%;
+        display: none;
+        width: 24px;
+        height: 24px;
+        color: var(--success);
+        transform: translateY(-50%);
+    }
+
+    &__icon-error {
+        position: absolute;
+        right: 18px;
+        top: 50%;
+        display: none;
+        width: 24px;
+        height: 24px;
+        color: var(--error);
+        transform: translateY(-50%);
+    }
+
     &__input-box {
         padding-left: 24px;
         background: var(--white);
@@ -29,7 +51,7 @@
         &:focus {
             outline: none;
             border-color: var(--blue);
-            box-shadow: 0px 1px 1px rgba(51, 154, 240, 0.1);
+            box-shadow: 0px 1px 1px rgba(51, 154, 240, .1);
         }
 
         &_invalid {
@@ -47,26 +69,5 @@
         &_invalid:focus {
             border-color: var(--error);
         }
-    }
-    &__icon-success {
-        position: absolute;
-        right: 18px;
-        top: 50%;
-        display: none;
-        width: 24px;
-        height: 24px;
-        color: var(--success);
-        transform: translateY(-50%);
-    }
-
-    &__icon-error {
-        position: absolute;
-        right: 18px;
-        top: 50%;
-        display: none;
-        width: 24px;
-        height: 24px;
-        color: var(--error);
-        transform: translateY(-50%);
     }
 }
