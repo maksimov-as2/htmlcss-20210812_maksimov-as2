@@ -1,0 +1,32 @@
+.ipage {
+    box-sizing: border-box;
+    background: var(--grey-1b);
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100%;
+}
+
+.ipage__box {
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+.ipage__box-slim-mobile {
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+@media all and (max-width:1140px) { /*prevent touch ipage to screen borders */
+    .ipage__box {
+        padding: 0 16px;
+    }
+    .ipage__box-slim-mobile {
+        padding: 0 16px;
+    }
+}
+
+@media all and (max-width:768px) {
+    .ipage__box-slim-mobile {
+        padding: 0;
+    }
+}
