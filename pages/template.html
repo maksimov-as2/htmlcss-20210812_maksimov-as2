@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="../components/footer/ifooter.css">
         <link rel="stylesheet" href="../components/cpreview/cpreview.css">
         <link rel="stylesheet" href="../components/cnav/cnav.css">
+        <link rel="stylesheet" href="../components/tabs/tabs.css">
         <style>
             html body {
                 height: 100%;
@@ -41,7 +42,38 @@
                             <button class="cnav__button">Main page</button>
                         </div>
                         <div class="cpreview__content">
-                            
+                            <div class="cpreview__demo">
+                                <div class="cpreview__title">
+                                    Title
+                                </div>
+                                <div class="cpreview__live">
+                                   
+                                </div>
+                            </div>
+                            <div class="cpreview__code">
+                                <div class="tabs">
+                                    <input id="html-tab" class="tabs__native-control tabs__native-control_html" name="t" type="radio" checked>
+                                    <input id="css-tab" class="tabs__native-control tabs__native-control_css" name="t" type="radio">
+                                    <div class="tabs__header tabs__header_compact">
+                                        <div class="tabs__scroller">
+                                            <label class="tabs__item tabs__item-marker_html" for="html-tab">
+                                                HTML
+                                            </label>
+                                            <label class="tabs__item tabs__item-marker_css" for="css-tab">
+                                                CSS
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="tabs__content cpreview__code-layout">
+                                        <div class="tabs__html-tab-content">
+                                            
+                                        </div>
+                                        <div class="tabs__css-tab-content">
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
