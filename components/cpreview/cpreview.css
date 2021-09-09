@@ -14,6 +14,37 @@
     background: var(--white);
     box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
     border-radius: 12px;
+    padding: 32px 48px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "demo"
+                         "code";
+}
+
+.cpreview__demo {
+    grid-area: "demo";
+}
+
+.cpreview__title {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 38px;
+    color: var(--grey-4);
+}
+
+.cpreview__live {
+   margin-top: 24px;
+   margin-bottom: 24px;
+}
+
+.cpreview__code {
+    grid-area: "code";
+}
+
+.cpreview__code-layout {
+    margin-top: 64px;
+    margin-bottom: 64px;
 }
 
 @media all and (max-width:768px) {
