@@ -13,7 +13,7 @@
     text-align: center;
     transition: all var(--transition-time) ease-in-out;
 
-    &-primary {
+    &_primary {
         background: var(--blue);
         color: var(--white);
     
@@ -27,7 +27,7 @@
         }
     }
 
-    &-secondary {
+    &_secondary {
         background: var(--purple);
         color: var(--white);
 
@@ -41,7 +41,7 @@
         }
     }
 
-    &-alternate {
+    &_alternate {
         color: var(--black);
         background: var(--white);
         border: var(--border-grey);

@@ -14,45 +14,45 @@
     transition: all var(--transition-time) ease-in-out;
 }
 
-.btn-primary {
+.btn_primary {
     background: var(--blue);
     color: var(--white);
 }
 
-.btn-primary:hover{
+.btn_primary:hover{
     background: var(--dark-blue);
 }
 
-.btn-primary:disabled{
+.btn_primary:disabled{
     pointer-events: none;
     opacity: 0.5;
 }
 
-.btn-secondary {
+.btn_secondary {
     background: var(--purple);
     color: var(--white);
 }
 
-.btn-secondary:hover{
+.btn_secondary:hover{
     background: var(--dark-purple);
 }
 
-.btn-secondary:disabled{
+.btn_secondary:disabled{
     pointer-events: none;
     opacity: 0.5;
 }
 
-.btn-alternate {
+.btn_alternate {
     color: var(--black);
     background: var(--white);
     border: var(--border-grey);
 }
 
-.btn-alternate:hover{
+.btn_alternate:hover{
     border: var(--border-black);
 }
 
-.btn-alternate:disabled{
+.btn_alternate:disabled{
     color: var(--grey-4);
     pointer-events: none;
     opacity: 0.5;
