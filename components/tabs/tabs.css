@@ -22,8 +22,8 @@
 }
 
 .tabs__native-control {
-    position:absolute;
-    left:0px;
+    position: absolute;
+    left: 0px;
     top: 0px;
     opacity: 0;
     pointer-events: none;
@@ -61,7 +61,6 @@
     display: none;
 }
 
-
 .tabs__native-control_1:checked ~ .tabs__header .tabs__item-marker_1 {
     border-bottom-color: var(--black);
 }
@@ -78,7 +77,6 @@
     display: flex;
 }
 
-
 .tabs__native-control_2:checked ~ .tabs__header .tabs__item-marker_2 {
     border-bottom-color: var(--black);
 }
@@ -86,7 +84,6 @@
 .tabs__native-control_2:checked ~ .tabs__content .tabs__elements-tab-content {
     display: flex;
 }
-
 
 .tabs__native-control_3:checked ~ .tabs__header .tabs__item-marker_3 {
     border-bottom-color: var(--black);
@@ -96,7 +93,6 @@
     display: flex;
 }
 
-
 .tabs__native-control_4:checked ~ .tabs__header .tabs__item-marker_4 {
     border-bottom-color: var(--black);
 }
@@ -105,7 +101,6 @@
     display: flex;
 }
 
-
 .tabs__native-control_html:checked ~ .tabs__header .tabs__item-marker_html {
     border-bottom-color: var(--black);
 }
@@ -113,7 +108,6 @@
 .tabs__native-control_html:checked ~ .tabs__content .tabs__html-tab-content {
     display: block;
 }
-
 
 .tabs__native-control_css:checked ~ .tabs__header .tabs__item-marker_css {
     border-bottom-color: var(--black);

@@ -1,0 +1,8 @@
+.github
+.git
+**/*.js
+**/*.yml
+**/*.json
+**/*.md
+.prettierrc
+.stylelintrc

@@ -1,7 +1,7 @@
 .cpreview {
-    display:grid;
+    display: grid;
     grid-template-columns: auto 1fr;
-    grid-template-areas: "nav content";
+    grid-template-areas: 'nav content';
     column-gap: 56px;
 
     &__nav {
@@ -16,12 +16,13 @@
         padding: 32px 48px;
         display: grid;
         grid-template-rows: 1fr 1fr;
-        grid-template-areas: "demo"
-                            "code";
+        grid-template-areas:
+            'demo'
+            'code';
     }
 
     &__demo {
-        grid-area: "demo";
+        grid-area: 'demo';
     }
 
     &__title {
@@ -33,12 +34,12 @@
     }
 
     &__live {
-    margin-top: 24px;
-    margin-bottom: 24px;
+        margin-top: 24px;
+        margin-bottom: 24px;
     }
 
     &__code {
-        grid-area: "code";
+        grid-area: 'code';
     }
 
     &__code-layout {
@@ -46,10 +47,10 @@
         margin-bottom: 64px;
     }
 
-    @media all and (max-width:768px) {
-        grid-template-columns: 0 1fr ;
-        column-gap: 0;  
-       
+    @media all and (max-width: 768px) {
+        grid-template-columns: 0 1fr;
+        column-gap: 0;
+
         &__content {
             border-radius: 0;
             box-shadow: unset;

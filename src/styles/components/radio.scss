@@ -43,24 +43,24 @@
         color: var(--grey-4);
     }
 
-    &__native:checked ~ &__override &__checked-icon  {
+    &__native:checked ~ &__override &__checked-icon {
         display: block;
     }
 
-    &__native:disabled ~ &__override  {
+    &__native:disabled ~ &__override {
         pointer-events: none;
     }
 
-    &__native:disabled ~ &__override &__icon-box  {
+    &__native:disabled ~ &__override &__icon-box {
         background: var(--grey-2);
         border-color: var(--grey-2);
     }
 
-    &__native:disabled ~ &__override &__text  {
+    &__native:disabled ~ &__override &__text {
         color: var(--grey-2);
     }
 
-    &__native:focus ~ &__override &__text  {
+    &__native:focus ~ &__override &__text {
         text-decoration: underline;
     }
 }

@@ -17,7 +17,8 @@
         color: var(--grey-4);
     }
 
-    &__summary::-webkit-details-marker {  /* нестандартный псевдоэлемент Google Chrome */
+    &__summary::-webkit-details-marker {
+        /* нестандартный псевдоэлемент Google Chrome */
         display: none;
     }
 
@@ -28,7 +29,6 @@
         border: 1px solid var(--grey-3);
         padding: 24px 32px 24px 32px;
         border-radius: 8px;
-
         font-style: normal;
         font-weight: normal;
         font-size: 16px;

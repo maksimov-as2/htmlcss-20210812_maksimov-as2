@@ -16,7 +16,7 @@
         line-height: 24px;
         color: var(--grey-5);
         text-align: center;
-        padding-bottom:24px;
+        padding-bottom: 24px;
     }
 
     &__wrapper {
@@ -52,7 +52,7 @@
     }
 
     &__item_data {
-        font-family: Source Sans Pro;
+        font-family: Source Sans Pro, sans-serif;
         font-style: normal;
         font-weight: normal;
         font-size: 16px;
@@ -68,5 +68,4 @@
     &__item_selection-body {
         background: rgba(160, 177, 245, 0.2);
     }
- 
 }

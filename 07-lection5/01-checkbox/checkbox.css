@@ -43,28 +43,28 @@
     color: var(--grey-4);
 }
 
-.cbx__native:checked ~ .cbx__override .cbx__icon-box  {
+.cbx__native:checked ~ .cbx__override .cbx__icon-box {
     background: var(--blue);
     border-color: var(--blue);
 }
 
-.cbx__native:checked ~ .cbx__override .cbx__checked-icon  {
+.cbx__native:checked ~ .cbx__override .cbx__checked-icon {
     display: block;
 }
 
-.cbx__native:disabled ~ .cbx__override  {
+.cbx__native:disabled ~ .cbx__override {
     pointer-events: none;
 }
 
-.cbx__native:disabled ~ .cbx__override .cbx__icon-box  {
+.cbx__native:disabled ~ .cbx__override .cbx__icon-box {
     background: var(--grey-2);
     border-color: var(--grey-2);
 }
 
-.cbx__native:disabled ~ .cbx__override .cbx__text  {
+.cbx__native:disabled ~ .cbx__override .cbx__text {
     color: var(--grey-2);
 }
 
-.cbx__native:focus ~ .cbx__override .cbx__text  {
+.cbx__native:focus ~ .cbx__override .cbx__text {
     text-decoration: underline;
 }

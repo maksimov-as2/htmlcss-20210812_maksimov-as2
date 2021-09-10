@@ -18,7 +18,8 @@
     color: var(--grey-4);
 }
 
-.accordion__summary::-webkit-details-marker {  /* нестандартный псевдоэлемент Google Chrome */
+.accordion__summary::-webkit-details-marker {
+    /* нестандартный псевдоэлемент Google Chrome */
     display: none;
 }
 

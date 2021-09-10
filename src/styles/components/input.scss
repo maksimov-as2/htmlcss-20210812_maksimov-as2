@@ -3,6 +3,28 @@
     box-sizing: border-box;
     position: relative;
 
+    &__icon-success {
+        position: absolute;
+        right: 18px;
+        top: 50%;
+        display: none;
+        width: 24px;
+        height: 24px;
+        color: var(--success);
+        transform: translateY(-50%);
+    }
+
+    &__icon-error {
+        position: absolute;
+        right: 18px;
+        top: 50%;
+        display: none;
+        width: 24px;
+        height: 24px;
+        color: var(--error);
+        transform: translateY(-50%);
+    }
+
     &__input-box {
         padding-left: 24px;
         background: var(--white);
@@ -47,26 +69,5 @@
         &_invalid:focus {
             border-color: var(--error);
         }
-    }
-    &__icon-success {
-        position: absolute;
-        right: 18px;
-        top: 50%;
-        display: none;
-        width: 24px;
-        height: 24px;
-        color: var(--success);
-        transform: translateY(-50%);
-    }
-
-    &__icon-error {
-        position: absolute;
-        right: 18px;
-        top: 50%;
-        display: none;
-        width: 24px;
-        height: 24px;
-        color: var(--error);
-        transform: translateY(-50%);
     }
 }

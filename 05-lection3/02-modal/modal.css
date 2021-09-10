@@ -11,9 +11,9 @@
 
 .mw__window {
     position: absolute;
-    top:50%;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     width: 428px;
     height: 294px;
     background: var(--white);
@@ -26,7 +26,7 @@
     font-weight: 600;
     font-size: 20px;
     line-height: 24px;
-    color: #334D6E;
+    color: #334d6e;
     margin-bottom: 16px;
 }
 

@@ -16,14 +16,23 @@
 
 .skltn__title {
     display: inline-block;
-    width: calc(98% - 64px); /* 2% is sufficient for inline-block spaces compensation, 64px - skltn__circle */
+    width: calc(
+        98% - 64px
+    ); /* 2% is sufficient for inline-block spaces compensation, 64px - skltn__circle */
     height: 64px;
 }
 
 .skltn__row {
     height: 20px;
     margin: 8px;
-    background: linear-gradient(92.51deg, #DDE2E5 6.44%, #E2E6E8 38.47%, #F3F5F5 56.48%, #E3E7EA 77.5%, #DDE2E5 102.52%);
+    background: linear-gradient(
+        92.51deg,
+        #dde2e5 6.44%,
+        #e2e6e8 38.47%,
+        #f3f5f5 56.48%,
+        #e3e7ea 77.5%,
+        #dde2e5 102.52%
+    );
 }
 
 .skltn__row_short {

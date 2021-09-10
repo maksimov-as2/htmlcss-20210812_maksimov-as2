@@ -52,32 +52,32 @@
     align-items: center;
 }
 
-.tgl__native:checked ~ .tgl__override .tgl__checked-icon  {
+.tgl__native:checked ~ .tgl__override .tgl__checked-icon {
     left: calc(100% - 1px);
     transform: translateX(-100%);
     background: var(--white);
     border-color: var(--white);
 }
 
-.tgl__native:checked ~ .tgl__override .tgl__icon-box  {
+.tgl__native:checked ~ .tgl__override .tgl__icon-box {
     background: var(--blue);
     border-color: var(--blue);
 }
 
-.tgl__native:disabled ~ .tgl__override  {
+.tgl__native:disabled ~ .tgl__override {
     pointer-events: none;
 }
 
-.tgl__native:disabled ~ .tgl__override .tgl__icon-box  {
+.tgl__native:disabled ~ .tgl__override .tgl__icon-box {
     background: var(--grey-2);
     border-color: var(--grey-2);
 }
 
-.tgl__native:disabled ~ .tgl__override .tgl__checked-icon  {
+.tgl__native:disabled ~ .tgl__override .tgl__checked-icon {
     background: var(--grey-3);
     border-color: var(--grey-3);
 }
 
-.tgl__native:focus ~ .tgl__override .tgl__text  {
+.tgl__native:focus ~ .tgl__override .tgl__text {
     text-decoration: underline;
 }

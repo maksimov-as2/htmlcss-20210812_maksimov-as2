@@ -4,7 +4,7 @@
     width: 189px;
     height: 48px;
     cursor: pointer;
-    border: none; 
+    border: none;
     border-radius: 8px;
     font-style: normal;
     font-weight: 500;
@@ -16,12 +16,12 @@
     &_primary {
         background: var(--blue);
         color: var(--white);
-    
-        &:hover{
+
+        &:hover {
             background: var(--dark-blue);
         }
 
-        &:disabled{
+        &:disabled {
             pointer-events: none;
             opacity: 0.5;
         }
@@ -31,11 +31,11 @@
         background: var(--purple);
         color: var(--white);
 
-        &y:hover{
+        &y:hover {
             background: var(--dark-purple);
         }
 
-        &:disabled{
+        &:disabled {
             pointer-events: none;
             opacity: 0.5;
         }
@@ -46,15 +46,14 @@
         background: var(--white);
         border: var(--border-grey);
 
-        &:hover{
+        &:hover {
             border: var(--border-black);
         }
 
-        &:disabled{
+        &:disabled {
             color: var(--grey-4);
             pointer-events: none;
             opacity: 0.5;
         }
     }
-
 }

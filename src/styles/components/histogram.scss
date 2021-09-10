@@ -3,8 +3,8 @@
     background: var(--white);
     border: 1px solid var(--grey-3);
     box-sizing: border-box;
-    display:flex;
-    flex-direction:column;
+    display: flex;
+    flex-direction: column;
     border-radius: 8px;
 
     &_preview {
@@ -13,14 +13,14 @@
     }
 
     &__title {
-        display:flex;
-        flex-direction:row;
+        display: flex;
+        flex-direction: row;
         justify-content: space-between;
     }
 
     &__counters {
-        display:flex;
-        flex-direction:column;
+        display: flex;
+        flex-direction: column;
     }
 
     &__counters-title {
@@ -43,10 +43,10 @@
     }
 
     &__graph {
-        height:100px;
+        height: 100px;
         gap: 1px;
-        display:flex;
-        flex-direction:row;
+        display: flex;
+        flex-direction: row;
         align-items: flex-end;
     }
 
