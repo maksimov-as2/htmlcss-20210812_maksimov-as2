@@ -1,0 +1,13 @@
+.ipreview {
+    margin-top: 32px;
+    margin-bottom: 32px;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 28px;
+
+    @media all and (max-width:768px) {
+        gap: 16px;
+        margin-top: 16px;
+    }
+}

@@ -1,0 +1,36 @@
+.cnav {
+    grid-area: nav;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    &__title {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 26px;
+        color: var(--black-max);
+    }
+
+    &__button {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 22px;
+        color: var(--black);
+        padding: 0;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        text-align: left;
+    }
+
+    &__button:hover {
+        color: var(--orange);
+    }
+
+    &__delimiter {
+        height: 22px;
+    }
+
+}

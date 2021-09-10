@@ -1,0 +1,15 @@
+.icard {
+    display:flex;
+    flex-direction: column;
+    height: 367px; /* temporary */
+    flex-basis: 350px;
+    background:  var(--white);
+    box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
+    border-radius: 12px;
+
+    @media all and (max-width:768px) {
+        height: 210px; /* temporary */
+        border-radius: 8px;
+        flex-basis: 164px;
+    }
+}

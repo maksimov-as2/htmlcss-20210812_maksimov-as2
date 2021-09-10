@@ -1,0 +1,66 @@
+.rad {
+    box-sizing: border-box;
+
+    &__override {
+        display: flex;
+        cursor: pointer;
+    }
+
+    &__native {
+        position: absolute;
+        width: 0px;
+        height: 0px;
+        opacity: 0;
+        pointer-events: none;
+        outline: none;
+    }
+
+    &__icon-box {
+        width: 24px;
+        height: 24px;
+        border: 2px solid var(--blue);
+        border-radius: 24px;
+        display: grid;
+        align-items: center;
+        justify-items: center;
+    }
+
+    &__checked-icon {
+        display: none;
+        color: var(--blue);
+        background-color: var(--blue);
+        width: 18px;
+        height: 18px;
+        border-radius: 18px;
+    }
+
+    &__text {
+        margin-left: 12px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        color: var(--grey-4);
+    }
+
+    &__native:checked ~ &__override &__checked-icon  {
+        display: block;
+    }
+
+    &__native:disabled ~ &__override  {
+        pointer-events: none;
+    }
+
+    &__native:disabled ~ &__override &__icon-box  {
+        background: var(--grey-2);
+        border-color: var(--grey-2);
+    }
+
+    &__native:disabled ~ &__override &__text  {
+        color: var(--grey-2);
+    }
+
+    &__native:focus ~ &__override &__text  {
+        text-decoration: underline;
+    }
+}
