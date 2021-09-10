@@ -33,7 +33,7 @@
     margin: 0 auto;
 }
 
-@media all and (max-width:768px) {
+@media all and (max-width: 768px) {
     .ifooter {
         display: none;
     }

@@ -51,33 +51,33 @@
         align-items: center;
     }
 
-    &__native:checked ~ &__override &__checked-icon  {
+    &__native:checked ~ &__override &__checked-icon {
         left: calc(100% - 1px);
         transform: translateX(-100%);
         background: var(--white);
         border-color: var(--white);
     }
 
-    &__native:checked ~ &__override &__icon-box  {
+    &__native:checked ~ &__override &__icon-box {
         background: var(--blue);
         border-color: var(--blue);
     }
 
-    &__native:disabled ~ &__override  {
+    &__native:disabled ~ &__override {
         pointer-events: none;
     }
 
-    &__native:disabled ~ &__override &__icon-box  {
+    &__native:disabled ~ &__override &__icon-box {
         background: var(--grey-2);
         border-color: var(--grey-2);
     }
 
-    &__native:disabled ~ &__override &__checked-icon  {
+    &__native:disabled ~ &__override &__checked-icon {
         background: var(--grey-3);
         border-color: var(--grey-3);
     }
 
-    &__native:focus ~ &__override &__text  {
+    &__native:focus ~ &__override &__text {
         text-decoration: underline;
     }
 }

@@ -44,23 +44,23 @@
     color: var(--grey-4);
 }
 
-.rad__native:checked ~ .rad__override .rad__checked-icon  {
+.rad__native:checked ~ .rad__override .rad__checked-icon {
     display: block;
 }
 
-.rad__native:disabled ~ .rad__override  {
+.rad__native:disabled ~ .rad__override {
     pointer-events: none;
 }
 
-.rad__native:disabled ~ .rad__override .rad__icon-box  {
+.rad__native:disabled ~ .rad__override .rad__icon-box {
     background: var(--grey-2);
     border-color: var(--grey-2);
 }
 
-.rad__native:disabled ~ .rad__override .rad__text  {
+.rad__native:disabled ~ .rad__override .rad__text {
     color: var(--grey-2);
 }
 
-.rad__native:focus ~ .rad__override .rad__text  {
+.rad__native:focus ~ .rad__override .rad__text {
     text-decoration: underline;
 }

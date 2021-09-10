@@ -17,7 +17,7 @@
     line-height: 24px;
     color: var(--grey-5);
     text-align: center;
-    padding-bottom:24px;
+    padding-bottom: 24px;
 }
 
 .ical__wrapper {
@@ -69,4 +69,3 @@
 .ical__item_selection-body {
     background: rgba(160, 177, 245, 0.2);
 }
- 

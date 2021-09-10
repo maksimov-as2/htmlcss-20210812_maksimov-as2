@@ -14,8 +14,8 @@
 
 .tlp__text {
     position: absolute;
-    left:50%;
-    transform: translate(-50%,calc(-100% - 24px - 8px));
+    left: 50%;
+    transform: translate(-50%, calc(-100% - 24px - 8px));
     min-width: 128px;
     min-height: 40px;
     background: var(--blue);
@@ -34,12 +34,11 @@
 }
 
 .tlp__text:after {
-    content: "";
+    content: '';
     border: 16px solid transparent;
     border-top: 8px solid var(--blue);
     position: absolute;
     left: 50%;
     bottom: 0;
-    transform: translate(-50%,100%);
+    transform: translate(-50%, 100%);
 }
-

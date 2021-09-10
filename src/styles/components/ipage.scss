@@ -15,7 +15,8 @@
         margin: 0 auto;
     }
 
-    @media all and (max-width: 1140px) { /*prevent touch ipage to screen borders */
+    @media all and (max-width: 1140px) {
+        /*prevent touch ipage to screen borders */
         &__box {
             padding: 0 16px;
         }

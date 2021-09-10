@@ -1,49 +1,50 @@
 {
-  "name": "tasks-htmlcss",
-  "version": "1.0.0",
-  "description": "Course Materials",
-  "scripts": {
-    "test": "cross-env NODE_ENV=test mocha --no-warnings --ignore=node_modules/** **/*.test.js",
-    "build-index-css": "postcss src/styles/index.scss -o build/index.css",
-    "build-cpage-css": "postcss src/styles/cpage.scss -o build/cpage.css",
-    "lint": "stylelint **/*.scss"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
+    "name": "tasks-htmlcss",
+    "version": "1.0.0",
+    "description": "Course Materials",
+    "scripts": {
+        "test": "cross-env NODE_ENV=test mocha --no-warnings --ignore=node_modules/** **/*.test.js",
+        "build-index-css": "postcss src/styles/index.scss -o build/index.css",
+        "build-cpage-css": "postcss src/styles/cpage.scss -o build/cpage.css",
+        "lint": "stylelint **/*.scss",
+        "pret": "prettier --write ."
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged"
+        }
+    },
+    "lint-staged": {
+        "*.{html,css,scss}": [
+            "prettier --write",
+            "git add"
+        ]
+    },
+    "keywords": [],
+    "author": "Sergey Zelenov",
+    "license": "ISC",
+    "devDependencies": {
+        "autoprefixer": "^10.3.4",
+        "chai": "^4.2.0",
+        "cross-env": "^7.0.2",
+        "cssnano": "^5.0.8",
+        "mocha": "^7.1.2",
+        "postcss": "^8.3.6",
+        "postcss-advanced-variables": "^3.0.1",
+        "postcss-cli": "^8.3.1",
+        "postcss-import": "^14.0.2",
+        "postcss-nested": "^5.0.6",
+        "postcss-scss": "^4.0.0",
+        "postcss-strip-inline-comments": "^0.1.5",
+        "precss": "^4.0.0",
+        "stylelint": "^13.13.1",
+        "stylelint-config-recommended-scss": "^4.3.0"
+    },
+    "dependencies": {
+        "husky": "^6.0.0",
+        "lint-staged": "^10.5.4",
+        "normalize.css": "^8.0.1",
+        "prettier": "2.4.0",
+        "stylelint-scss": "^3.20.1"
     }
-  },
-  "lint-staged": {
-    "*.{html,css,scss}": [
-      "prettier --write",
-      "git add"
-    ]
-  },
-  "keywords": [],
-  "author": "Sergey Zelenov",
-  "license": "ISC",
-  "devDependencies": {
-    "autoprefixer": "^10.3.4",
-    "chai": "^4.2.0",
-    "cross-env": "^7.0.2",
-    "cssnano": "^5.0.8",
-    "mocha": "^7.1.2",
-    "postcss": "^8.3.6",
-    "postcss-advanced-variables": "^3.0.1",
-    "postcss-cli": "^8.3.1",
-    "postcss-import": "^14.0.2",
-    "postcss-nested": "^5.0.6",
-    "postcss-scss": "^4.0.0",
-    "postcss-strip-inline-comments": "^0.1.5",
-    "precss": "^4.0.0",
-    "stylelint": "^13.13.1",
-    "stylelint-config-recommended-scss": "^4.3.0"
-  },
-  "dependencies": {
-    "husky": "^6.0.0",
-    "lint-staged": "^10.5.4",
-    "normalize.css": "^8.0.1",
-    "prettier": "2.4.0",
-    "stylelint-scss": "^3.20.1"
-  }
 }

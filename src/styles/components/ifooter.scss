@@ -20,7 +20,7 @@
         font-weight: 500;
         font-size: 12px;
         line-height: 18px;
-        letter-spacing: .04em;
+        letter-spacing: 0.04em;
         text-transform: uppercase;
         text-align: center;
         color: var(--grey-3);
@@ -35,5 +35,4 @@
     @media all and (max-width: 768px) {
         display: none;
     }
-
 }

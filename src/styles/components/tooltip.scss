@@ -14,7 +14,7 @@
         min-width: 128px;
         min-height: 40px;
         background: var(--blue);
-        box-shadow: 0px 2px 4px rgba(33, 36, 41, .05);
+        box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
         border-radius: 10px;
         font-style: normal;
         font-weight: normal;
@@ -41,5 +41,4 @@
         bottom: 0;
         transform: translate(-50%, 100%);
     }
-
 }

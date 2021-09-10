@@ -1,6 +1,7 @@
 # Кнопка
 
 Базовый элемент любого проекта. Несмотря на внешнюю простоту, скрывает за собой несколько состояний, которые нужно реализовать:
+
 1. `:hover`
 2. `:disabled`
 3. `:active`
@@ -25,6 +26,7 @@ figma: [https://www.figma.com/file/LavZmQfQccqyrTMzoSJYNu/csscourse1?node-id=171
 
 Для плавности переходов между состояниями кнопки можно использовать `transition`.
 Мы на него детальнее посмотрим на лекции про анимацию, но уже сейчас можно, например, сгладить изменение цвета фона и прозрачности:
+
 ```css
 .button_primary {
     /* ... */
@@ -39,4 +41,3 @@ figma: [https://www.figma.com/file/LavZmQfQccqyrTMzoSJYNu/csscourse1?node-id=171
 Для задания цветовой схемы нужно использовать css-переменные, которые находятся в нашем главном css-файле - main.css.
 
 [http://zmeika.name/2017/03/02/custom-css-properties-basics.html](http://zmeika.name/2017/03/02/custom-css-properties-basics.html)
-

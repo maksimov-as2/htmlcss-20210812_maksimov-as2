@@ -2,8 +2,8 @@
 <!-- Страница с полем ввода -->
 <html lang="ru">
     <head>
-        <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href="./input.css">
+        <link rel="stylesheet" href="../../assets/css/main.css" />
+        <link rel="stylesheet" href="./input.css" />
         <style>
             html {
                 height: 100%;
@@ -12,58 +12,97 @@
                 display: grid;
                 grid-template-rows: auto 64px 64px auto;
                 grid-template-columns: auto 400px 400px auto;
-                grid-template-areas: ". . . ."
-                                     ". i1 i2 ."
-                                     ". i3 i4 ."
-                                     ". . . ."
-                                    ;
+                grid-template-areas:
+                    '. . . .'
+                    '. i1 i2 .'
+                    '. i3 i4 .'
+                    '. . . .';
                 height: 100%;
                 background: white;
             }
         </style>
     </head>
     <body>
-        <div style="grid-area: i1;">
+        <div style="grid-area: i1">
             <label class="fld">
-                <input type="text" class="fld__input-box" name="param1" placeholder="Placeholder">
+                <input
+                    type="text"
+                    class="fld__input-box"
+                    name="param1"
+                    placeholder="Placeholder"
+                />
                 <svg class="fld__icon-success">
-                    <use xlink:href="../../assets/images/svg-sprite.svg#success"></use>
+                    <use
+                        xlink:href="../../assets/images/svg-sprite.svg#success"
+                    ></use>
                 </svg>
                 <svg class="fld__icon-error">
-                    <use xlink:href="../../assets/images/svg-sprite.svg#error"></use>
+                    <use
+                        xlink:href="../../assets/images/svg-sprite.svg#error"
+                    ></use>
                 </svg>
             </label>
         </div>
-        <div style="grid-area: i2;">
+        <div style="grid-area: i2">
             <label class="fld">
-                <input type="text" class="fld__input-box" name="param1" placeholder="Placeholder" value="Filled input">
+                <input
+                    type="text"
+                    class="fld__input-box"
+                    name="param1"
+                    placeholder="Placeholder"
+                    value="Filled input"
+                />
                 <svg class="fld__icon-success">
-                    <use xlink:href="../../assets/images/svg-sprite.svg#success"></use>
+                    <use
+                        xlink:href="../../assets/images/svg-sprite.svg#success"
+                    ></use>
                 </svg>
                 <svg class="fld__icon-error">
-                    <use xlink:href="../../assets/images/svg-sprite.svg#error"></use>
+                    <use
+                        xlink:href="../../assets/images/svg-sprite.svg#error"
+                    ></use>
                 </svg>
             </label>
         </div>
-        <div style="grid-area: i3;">
+        <div style="grid-area: i3">
             <label class="fld">
-                <input type="text" class="fld__input-box fld__input-box_success" name="param1" placeholder="Placeholder" value="Success">
+                <input
+                    type="text"
+                    class="fld__input-box fld__input-box_success"
+                    name="param1"
+                    placeholder="Placeholder"
+                    value="Success"
+                />
                 <svg class="fld__icon-success">
-                    <use xlink:href="../../assets/images/svg-sprite.svg#success"></use>
+                    <use
+                        xlink:href="../../assets/images/svg-sprite.svg#success"
+                    ></use>
                 </svg>
                 <svg class="fld__icon-error">
-                    <use xlink:href="../../assets/images/svg-sprite.svg#error"></use>
+                    <use
+                        xlink:href="../../assets/images/svg-sprite.svg#error"
+                    ></use>
                 </svg>
             </label>
         </div>
-        <div style="grid-area: i4;">
+        <div style="grid-area: i4">
             <label class="fld">
-                <input type="text" class="fld__input-box fld__input-box_invalid" name="param1" placeholder="Placeholder" value="Error">
+                <input
+                    type="text"
+                    class="fld__input-box fld__input-box_invalid"
+                    name="param1"
+                    placeholder="Placeholder"
+                    value="Error"
+                />
                 <svg class="fld__icon-success">
-                    <use xlink:href="../../assets/images/svg-sprite.svg#success"></use>
+                    <use
+                        xlink:href="../../assets/images/svg-sprite.svg#success"
+                    ></use>
                 </svg>
                 <svg class="fld__icon-error">
-                    <use xlink:href="../../assets/images/svg-sprite.svg#error"></use>
+                    <use
+                        xlink:href="../../assets/images/svg-sprite.svg#error"
+                    ></use>
                 </svg>
             </label>
         </div>
