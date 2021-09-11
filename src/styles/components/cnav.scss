@@ -5,18 +5,12 @@
     gap: 4px;
 
     &__title {
-        font-style: normal;
-        font-weight: normal;
-        font-size: 20px;
-        line-height: 26px;
+        @include font(normal, normal, 20px, 26px);
         color: var(--black-max);
     }
 
     &__button {
-        font-style: normal;
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 22px;
+        @include font(normal, normal, 14px, 22px);
         color: var(--black);
         padding: 0;
         border: none;

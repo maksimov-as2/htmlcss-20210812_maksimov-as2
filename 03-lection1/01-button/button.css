@@ -19,11 +19,11 @@
     color: var(--white);
 }
 
-.btn_primary:hover{
+.btn_primary:hover {
     background: var(--dark-blue);
 }
 
-.btn_primary:disabled{
+.btn_primary:disabled {
     pointer-events: none;
     opacity: 0.5;
 }
@@ -33,11 +33,11 @@
     color: var(--white);
 }
 
-.btn_secondary:hover{
+.btn_secondary:hover {
     background: var(--dark-purple);
 }
 
-.btn_secondary:disabled{
+.btn_secondary:disabled {
     pointer-events: none;
     opacity: 0.5;
 }
@@ -48,11 +48,11 @@
     border: var(--border-grey);
 }
 
-.btn_alternate:hover{
+.btn_alternate:hover {
     border: var(--border-black);
 }
 
-.btn_alternate:disabled{
+.btn_alternate:disabled {
     color: var(--grey-4);
     pointer-events: none;
     opacity: 0.5;

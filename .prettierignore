@@ -1,5 +1,6 @@
 .github
 .git
+build
 **/*.js
 **/*.yml
 **/*.json

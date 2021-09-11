@@ -10,10 +10,7 @@
 
     &__hidden {
         margin-top: 16px;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 24px;
+        @include font(normal, normal, 16px, 24px);
         color: var(--grey-4);
     }
 
@@ -23,15 +20,12 @@
     }
 
     &__item {
+        @include font(normal, normal, 16px, 24px);
         margin-bottom: 8px;
-        line-height: 24px;
         background: var(--white);
         border: 1px solid var(--grey-3);
         padding: 24px 32px 24px 32px;
         border-radius: 8px;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
     }
 
     &__item:last-child {
@@ -39,10 +33,7 @@
     }
 
     &__title {
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 24px;
+        @include font(normal, normal, 16px, 24px);
         color: var(--black);
         flex-grow: 1;
     }
