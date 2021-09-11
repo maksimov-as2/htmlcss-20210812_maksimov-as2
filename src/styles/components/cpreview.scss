@@ -26,10 +26,7 @@
     }
 
     &__title {
-        font-style: normal;
-        font-weight: normal;
-        font-size: 28px;
-        line-height: 38px;
+        @include font(normal, normal, 28px, 38px);
         color: var(--grey-4);
     }
 
@@ -47,7 +44,7 @@
         margin-bottom: 64px;
     }
 
-    @media all and (max-width: 768px) {
+    @include mobile {
         grid-template-columns: 0 1fr;
         column-gap: 0;
 

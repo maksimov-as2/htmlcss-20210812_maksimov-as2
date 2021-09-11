@@ -21,19 +21,13 @@
     }
 
     &__title {
-        font-style: normal;
-        font-weight: 600;
-        font-size: 20px;
-        line-height: 24px;
+        @include font(normal, 600, 20px, 24px);
         color: #334d6e;
         margin-bottom: 16px;
     }
 
     &__text {
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 24px;
+        @include font(normal, normal, 16px, 24px);
         color: var(--grey-4);
     }
 

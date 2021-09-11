@@ -1,0 +1,31 @@
+@mixin font(
+    $fontSytle: false,
+    $fontWeight: false,
+    $fontSize: false,
+    $lineHeight: false
+) {
+    @if ($fontSytle) {
+        font-style: $fontSytle;
+    }
+    @if ($fontWeight) {
+        font-weight: $fontWeight;
+    }
+    @if ($fontSize) {
+        font-size: $fontSize;
+    }
+    @if ($lineHeight) {
+        line-height: $lineHeight;
+    }
+}
+
+@mixin mobile {
+    @media all and (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin mobile-ext {
+    @media all and (max-width: 1140px) {
+        @content;
+    }
+}

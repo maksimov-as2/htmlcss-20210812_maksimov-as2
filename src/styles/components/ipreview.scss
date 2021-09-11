@@ -6,7 +6,7 @@
     flex-wrap: wrap;
     gap: 28px;
 
-    @media all and (max-width: 768px) {
+    @include mobile {
         gap: 16px;
         margin-top: 16px;
     }

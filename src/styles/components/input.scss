@@ -34,17 +34,11 @@
         height: 56px;
         display: grid;
         align-items: center;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 20px;
-        line-height: 26px;
+        @include font(normal, normal, 20px, 26px);
         color: var(--grey-4);
 
         &::placeholder {
-            font-style: normal;
-            font-weight: normal;
-            font-size: 20px;
-            line-height: 26px;
+            @include font(normal, normal, 20px, 26px);
             color: var(--grey-2);
         }
 

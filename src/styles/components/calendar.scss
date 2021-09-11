@@ -10,10 +10,7 @@
     }
 
     &__title {
-        font-style: normal;
-        font-weight: 600;
-        font-size: 20px;
-        line-height: 24px;
+        @include font(normal, 600, 20px, 24px);
         color: var(--grey-5);
         text-align: center;
         padding-bottom: 24px;
