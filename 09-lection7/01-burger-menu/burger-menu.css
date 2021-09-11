@@ -1,0 +1,100 @@
+.burger {
+    position: relative;
+    z-index: 1;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 0px;
+    height: 0px;
+}
+.burger__button {
+    position: absolute;
+    left: 16px;
+    top: 16px;
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    display: none;
+    justify-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.burger__icon-open {
+    width: 24px;
+    height: 24px;
+}
+.burger__icon-close {
+    width: 24px;
+    height: 24px;
+    background: var(--grey-2);
+    border-radius: 24px;
+}
+.burger__content {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    -webkit-transform: translateX(-100vw);
+    -ms-transform: translateX(-100vw);
+    transform: translateX(-100vw);
+    -webkit-transition: -webkit-transform 250ms ease-in-out;
+    transition: -webkit-transform 250ms ease-in-out;
+    -o-transition: transform 250ms ease-in-out;
+    transition: transform 250ms ease-in-out;
+    transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
+}
+.burger__items {
+    z-index: 1;
+    margin-top: 64px;
+    height: 100%;
+    padding: 24px 16px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 16px;
+    background: var(--white);
+}
+.burger__title {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 26px;
+    color: var(--grey-3);
+}
+.burger__item {
+    display: block;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;
+    color: var(--black);
+}
+.burger__item:hover {
+    color: var(--orange);
+}
+.burger__content[data-open] {
+    -webkit-transform: translateX(0vw);
+    -ms-transform: translateX(0vw);
+    transform: translateX(0vw);
+}
+@media all and (max-width: 768px) {
+    .burger__button {
+        display: grid;
+    }
+    .burger__content {
+        display: block;
+    }
+}
