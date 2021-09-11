@@ -1,0 +1,31 @@
+.theme {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 32px 52px 32px;
+    column-gap: 16px;
+    align-items: center;
+}
+
+.theme__icon-box {
+    width: 32px;
+    height: 32px;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.theme__sun-icon {
+    width: 24px;
+    height: 24px;
+    color: var(--black);
+}
+
+.theme__moon-icon {
+    width: 20px;
+    height: 20px;
+    color: var(--black);
+}
+
+.theme__toggle {
+    height: 28px;
+}
