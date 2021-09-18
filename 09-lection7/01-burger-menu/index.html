@@ -5,16 +5,43 @@
         <link rel="stylesheet" href="../../assets/css/main.css" />
         <link rel="stylesheet" href="./burger-menu.css" />
         <script defer src="./burger-menu.js"></script>
+        <style>
+            .menu-button {
+                margin: 16px;
+                width: 32px;
+                height: 32px;
+                padding: 0;
+                border: none;
+                background-color: transparent;
+                cursor: pointer;
+                display: none;
+                justify-items: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+            }
+            
+            .menu-icon {
+                width: 24px;
+                height: 24px;
+            }
+
+            @media all and (max-width: 768px) {
+                .menu-button {
+                    display: grid;
+                }
+            }
+        </style>
     </head>
     <body>
+        <button class="menu-button" id="burger-menu-open">
+            <svg class="menu-icon">
+                <use
+                    xlink:href="../../assets/images/svg-sprite.svg#open-mobile-menu"
+                ></use>
+            </svg>
+        </button>
         <div class="burger">
-            <button class="burger__button" id="burger-menu-open">
-                <svg class="burger__icon-open">
-                    <use
-                        xlink:href="../../assets/images/svg-sprite.svg#open-mobile-menu"
-                    ></use>
-                </svg>
-            </button>
             <div class="burger__content" id="burger-menu">
                 <button class="burger__button" id="burger-menu-close">
                     <svg class="burger__icon-close">
