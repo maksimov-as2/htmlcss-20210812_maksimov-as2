@@ -3,40 +3,89 @@
 <html lang="ru">
     <head>
         <link rel="stylesheet" href="../../assets/css/main.css" />
-        <link rel="stylesheet" href="theme.css" />
         <link rel="stylesheet" href="../../07-lection5/03-toggler/toggler.css" />
         <style>
             html[data-theme-dark] {
                 background: #000;
                 --white: #000;
+                --black: #fff;
             }
+
+            html[data-theme-dark] .theme-picker__sun-icon {
+                color: var(--grey-2);
+            }
+
+            html[data-theme-dark] .theme-picker__moon-icon {
+                color: var(--black);
+            }
+
+            .theme-picker {
+                box-sizing: border-box;
+                display: grid;
+                column-gap: 16px;
+                align-items: center;
+                grid-template-columns: 32px 52px 32px;
+                grid-template-rows: 32px;
+                grid-template-areas: "sun-icon toggle moon-icon";
+            }
+
+            .theme-picker__toggle {
+                grid-area: toggle;
+            } 
+
+            .theme-picker__sun-icon {
+                grid-area: sun-icon;
+                display: grid;
+                align-items: center;
+                justify-items: center;
+                color: var(--black);
+            }
+
+            .theme-picker__moon-icon {
+                grid-area: moon-icon;
+                display: grid;
+                align-items: center;
+                justify-items: center;
+                color: var(--grey-2);
+            }
+
+            .sun-icon {
+                width: 24px;
+                height: 24px;
+            }
+
+            .moon-icon {
+                width: 20px;
+                height: 20px;
+            }
+            
         </style>
         <script defer src="./theme-changer.js"></script>
     </head>
     <body style='background: var(--white);'>
-        <div class="theme">
-            <div class="theme__icon-box">
-                <svg class="theme__sun-icon">
-                    <use
-                        xlink:href="../../assets/images/svg-sprite.svg#sun"
-                    ></use>
-                </svg>
-            </div>
-            <label class="tgl theme__toggle">
-                <input type="checkbox" class="tgl__native" id="theme-changer" />
+        <label class="theme-picker" id="theme-changer">
+            <div class="tgl theme-picker__toggle">
+                <input type="checkbox" class="tgl__native" />
                 <div class="tgl__override">
                     <div class="tgl__icon-box">
                         <div class="tgl__checked-icon"></div>
                     </div>
                 </div>
-            </label>
-            <div class="theme__icon-box">
-                <svg class="theme__moon-icon">
+            </div>
+            <div class="theme-picker__sun-icon">
+                <svg class="sun-icon">
+                    <use
+                        xlink:href="../../assets/images/svg-sprite.svg#sun"
+                    ></use>
+                </svg>
+            </div>
+            <div class="theme-picker__moon-icon">
+                <svg class="moon-icon">
                     <use
                         xlink:href="../../assets/images/svg-sprite.svg#moon"
                     ></use>
                 </svg>
             </div>
-        <div>
+        </label>
     </body>
 </html>
