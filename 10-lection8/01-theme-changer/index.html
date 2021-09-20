@@ -3,7 +3,10 @@
 <html lang="ru">
     <head>
         <link rel="stylesheet" href="../../assets/css/main.css" />
-        <link rel="stylesheet" href="../../07-lection5/03-toggler/toggler.css" />
+        <link
+            rel="stylesheet"
+            href="../../07-lection5/03-toggler/toggler.css"
+        />
         <style>
             html[data-theme-dark] {
                 background: #000;
@@ -26,12 +29,12 @@
                 align-items: center;
                 grid-template-columns: 32px 52px 32px;
                 grid-template-rows: 32px;
-                grid-template-areas: "sun-icon toggle moon-icon";
+                grid-template-areas: 'sun-icon toggle moon-icon';
             }
 
             .theme-picker__toggle {
                 grid-area: toggle;
-            } 
+            }
 
             .theme-picker__sun-icon {
                 grid-area: sun-icon;
@@ -58,11 +61,10 @@
                 width: 20px;
                 height: 20px;
             }
-            
         </style>
         <script defer src="./theme-changer.js"></script>
     </head>
-    <body style='background: var(--white);'>
+    <body style="background: var(--white)">
         <label class="theme-picker" id="theme-changer">
             <div class="tgl theme-picker__toggle">
                 <input type="checkbox" class="tgl__native" />
