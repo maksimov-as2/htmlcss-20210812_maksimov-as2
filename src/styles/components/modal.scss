@@ -15,7 +15,7 @@
         transform: translate(-50%, -50%);
         width: 428px;
         height: 294px;
-        background: var(--white);
+        background: var(--card-background);
         border-radius: 8px;
         padding: 32px 40px;
     }
@@ -28,7 +28,7 @@
 
     &__text {
         @include font(normal, normal, 16px, 24px);
-        color: var(--grey-4);
+        color: var(--default-text-color);
     }
 
     &__close-button {
@@ -37,7 +37,7 @@
         top: 16px;
         width: 24px;
         height: 24px;
-        color: var(--grey-4);
+        color: var(--default-text-color);
         padding: 0;
         border: none;
         background-color: transparent;

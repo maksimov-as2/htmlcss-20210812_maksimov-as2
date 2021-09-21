@@ -5,7 +5,8 @@
     &__icon-close {
         width: 24px;
         height: 24px;
-        background: var(--grey-2);
+        background: var(--card-background);
+        color: var(--default-text-color);
         border-radius: 24px;
     }
     &__button {
@@ -44,11 +45,11 @@
         display: flex;
         flex-direction: column;
         gap: 16px;
-        background: var(--white);
+        background: var(--card-background);
     }
     &__title {
         @include font(normal, normal, 20px, 26px);
-        color: var(--grey-3);
+        color: var(--default-text-color);
     }
     &__item {
         display: block;
@@ -57,10 +58,10 @@
         cursor: pointer;
         @include font(normal, normal, 16px, 24px);
         text-align: left;
-        color: var(--black);
+        color: var(--default-text-color);
 
         &:hover {
-            color: var(--orange);
+            color: var(--hover-text-color);
         }
     }
     &__content[data-open] {

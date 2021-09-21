@@ -35,7 +35,7 @@
         display: grid;
         align-items: center;
         @include font(normal, normal, 20px, 26px);
-        color: var(--grey-4);
+        color: var(--default-text-color);
 
         &::placeholder {
             @include font(normal, normal, 20px, 26px);

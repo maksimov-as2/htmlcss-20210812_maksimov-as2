@@ -1,0 +1,44 @@
+.theme-picker {
+    box-sizing: border-box;
+    display: grid;
+    column-gap: 16px;
+    align-items: center;
+    grid-template-columns: 32px 52px 32px;
+    grid-template-rows: 32px;
+
+    &__sun-icon {
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        color: var(--black);
+    }
+
+    &__moon-icon {
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        color: var(--disabled-text-color);
+    }
+
+    &__sun-svg {
+        width: 24px;
+        height: 24px;
+    }
+
+    &__moon-svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    html[data-theme-dark] &__sun-icon {
+        color: var(--disabled-text-color);
+    }
+
+    html[data-theme-dark] &__moon-icon {
+        color: var(--white);
+    }
+
+    @include mobile {
+        display: none;
+    }
+}

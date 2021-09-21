@@ -1,6 +1,6 @@
 .ipage {
     box-sizing: border-box;
-    background: var(--grey-1b);
+    background: var(--layout-background);
     display: grid;
     grid-template-rows: auto 1fr auto;
     height: 100%;
@@ -8,6 +8,11 @@
     &__box {
         max-width: 1110px;
         margin: 0 auto;
+    }
+
+    &__space-between-container {
+        display: flex;
+        justify-content: space-between;
     }
 
     &__box-slim-mobile {

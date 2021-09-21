@@ -37,7 +37,7 @@
     &__text {
         margin-left: 12px;
         @include font(normal, normal, 16px, 24px);
-        color: var(--grey-4);
+        color: var(--default-text-color);
     }
 
     &__native:checked ~ &__override &__checked-icon {
