@@ -24,6 +24,14 @@
     --grey-4: #495057;
     --grey-5: #334d6e;
     --grey-5a: #90a0b7;
+    --grey-6: #ffffff75;
+
+    --layout-background: var(--grey-1b);
+    --card-background: var(--white);
+    --default-text-color: var(--black);
+    --disabled-text-color: var(--grey-2);
+    --hover-text-color: var(--grey-2a);
+    --tabs-marker-color: var(--black);
 
     --error: var(--red);
     --success: var(--blue-1);
@@ -35,7 +43,15 @@
     --border-black: 1px solid var(--black);
 
     --transition-time: 200ms;
-    --default-font-color: var(--black);
+}
+
+:root[data-theme-dark] {
+    --layout-background: var(--grey-4);
+    --card-background: var(--black);
+    --default-text-color: var(--grey-6);
+    --hover-text-color: var(--grey-2a);
+    --disabled-text-color: var(--grey-2);
+    --tabs-marker-color: var(--grey-2);
 }
 
 * {

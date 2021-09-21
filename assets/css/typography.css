@@ -3,7 +3,7 @@ h1 {
     line-height: 64px;
     font-weight: 500;
     font-style: normal;
-    color: var(--default-font-color);
+    color: var(--default-text-color);
 }
 
 h2 {
@@ -11,7 +11,7 @@ h2 {
     line-height: 48px;
     font-weight: 500;
     font-style: normal;
-    color: var(--default-font-color);
+    color: var(--default-text-color);
 }
 
 h3 {
@@ -19,7 +19,7 @@ h3 {
     line-height: 38px;
     font-weight: normal;
     font-style: normal;
-    color: var(--default-font-color);
+    color: var(--default-text-color);
 }
 
 h4 {
@@ -27,7 +27,7 @@ h4 {
     line-height: 26px;
     font-weight: normal;
     font-style: normal;
-    color: var(--default-font-color);
+    color: var(--default-text-color);
 }
 
 h5 {
@@ -37,7 +37,7 @@ h5 {
     font-style: normal;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    color: var(--default-font-color);
+    color: var(--default-text-color);
 }
 
 p {
@@ -45,7 +45,7 @@ p {
     font-weight: normal;
     font-size: 16px;
     line-height: 24px;
-    color: var(--default-font-color);
+    color: var(--default-text-color);
 }
 
 small {
@@ -53,9 +53,9 @@ small {
     font-weight: normal;
     font-size: 14px;
     line-height: 22px;
-    color: var(--default-font-color);
+    color: var(--default-text-color);
 }
 
 body {
-    background: var(--grey-1a);
+    background: var(--layout-background);
 }

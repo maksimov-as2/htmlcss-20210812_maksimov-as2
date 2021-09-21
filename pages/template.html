@@ -7,6 +7,10 @@
             defer
             src="../09-lection7/01-burger-menu/burger-menu.js"
         ></script>
+        <script
+            defer
+            src="../10-lection8/01-theme-changer/theme-changer.js"
+        ></script>
         <style>
             html body {
                 height: 100%;
@@ -14,47 +18,56 @@
         </style>
     </head>
     <body>
-        <div class="burger">
-            <button class="burger__button" id="burger-menu-open">
-                <svg class="burger__icon-open">
-                    <use
-                        xlink:href="../assets/images/svg-sprite.svg#open-mobile-menu"
-                    ></use>
-                </svg>
-            </button>
-            <div class="burger__content" id="burger-menu">
-                <button class="burger__button" id="burger-menu-close">
-                    <svg class="burger__icon-close">
-                        <use
-                            xlink:href="../assets/images/svg-sprite.svg#close"
-                        ></use>
-                    </svg>
-                </button>
-                <div class="burger__items">
-                    <div class="burger__title">Components</div>
-                    <button class="burger__item">Modal</button>
-                    <button class="burger__item">Tooltip</button>
-                    <button class="burger__item">Avatar</button>
-                    <button class="burger__item">Calendar</button>
-                    <button class="burger__item">Histogram</button>
-                    <button class="burger__item">Custom form elements</button>
-                </div>
-            </div>
-        </div>
         <div class="ipage ipage_slim">
             <header class="iheader iheader_slim">
                 <div class="ipage__box">
-                    <svg class="iheader__logo">
-                        <use
-                            xlink:href="../../assets/images/svg-sprite.svg#sq"
-                        ></use>
-                        <use
-                            xlink:href="../../assets/images/svg-sprite.svg#ci"
-                        ></use>
-                        <use
-                            xlink:href="../../assets/images/svg-sprite.svg#tr"
-                        ></use>
-                    </svg>
+                    <div class="ipage__space-between-container">
+                        <button
+                            class="mobile-menu-button"
+                            id="burger-menu-open"
+                        >
+                            <svg class="mobile-menu-button__icon">
+                                <use
+                                    xlink:href="../../assets/images/svg-sprite.svg#open-mobile-menu"
+                                ></use>
+                            </svg>
+                        </button>
+                        <svg class="iheader__logo">
+                            <use
+                                xlink:href="../../assets/images/svg-sprite.svg#sq"
+                            ></use>
+                            <use
+                                xlink:href="../../assets/images/svg-sprite.svg#ci"
+                            ></use>
+                            <use
+                                xlink:href="../../assets/images/svg-sprite.svg#tr"
+                            ></use>
+                        </svg>
+                        <label class="theme-picker" id="theme-changer">
+                            <div class="theme-picker__sun-icon">
+                                <svg class="theme-picker__sun-svg">
+                                    <use
+                                        xlink:href="../../assets/images/svg-sprite.svg#sun"
+                                    ></use>
+                                </svg>
+                            </div>
+                            <div class="tgl">
+                                <input type="checkbox" class="tgl__native" />
+                                <div class="tgl__override">
+                                    <div class="tgl__icon-box">
+                                        <div class="tgl__checked-icon"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="theme-picker__moon-icon">
+                                <svg class="theme-picker__moon-svg">
+                                    <use
+                                        xlink:href="../../assets/images/svg-sprite.svg#moon"
+                                    ></use>
+                                </svg>
+                            </div>
+                        </label>
+                    </div>
                 </div>
             </header>
             <main class="imain">
@@ -151,6 +164,26 @@
                     </div>
                 </div>
             </footer>
+        </div>
+        <div class="burger">
+            <div class="burger__content" id="burger-menu">
+                <button class="burger__button" id="burger-menu-close">
+                    <svg class="burger__icon-close">
+                        <use
+                            xlink:href="../../assets/images/svg-sprite.svg#close"
+                        ></use>
+                    </svg>
+                </button>
+                <div class="burger__items">
+                    <div class="burger__title">Components</div>
+                    <button class="burger__item">Modal</button>
+                    <button class="burger__item">Tooltip</button>
+                    <button class="burger__item">Avatar</button>
+                    <button class="burger__item">Calendar</button>
+                    <button class="burger__item">Histogram</button>
+                    <button class="burger__item">Custom form elements</button>
+                </div>
+            </div>
         </div>
     </body>
 </html>

@@ -1,0 +1,21 @@
+.mobile-menu-button {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    display: none;
+    justify-items: center;
+    align-items: center;
+
+    &__icon {
+        width: 24px;
+        height: 24px;
+    }
+
+    @include mobile {
+        display: grid;
+    }
+}

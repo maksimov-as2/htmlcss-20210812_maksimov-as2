@@ -3,11 +3,11 @@
     position: relative;
 
     &__header {
-        background: var(--white);
         border-bottom: 1px solid var(--grey-2);
         width: 100vw;
         overflow-x: auto;
         scrollbar-width: none;
+        background: var(--card-background);
 
         &_compact {
             width: 100%;
@@ -32,7 +32,7 @@
     &__item {
         display: inline-block;
         @include font(normal, normal, 16px, 24px);
-        color: var(--black);
+        color: var(--default-text-color);
         white-space: nowrap;
         border-bottom: 5px solid transparent;
     }
@@ -58,7 +58,7 @@
     }
 
     &__native-control_1:checked ~ &__header &__item-marker_1 {
-        border-bottom-color: var(--black);
+        border-bottom-color: var(--tabs-marker-color);
     }
 
     &__native-control_1:checked ~ &__content &__elements-tab-content {
@@ -74,7 +74,7 @@
     }
 
     &__native-control_2:checked ~ &__header &__item-marker_2 {
-        border-bottom-color: var(--black);
+        border-bottom-color: var(--tabs-marker-color);
     }
 
     &__native-control_2:checked ~ &__content &__elements-tab-content {
@@ -82,7 +82,7 @@
     }
 
     &__native-control_3:checked ~ &__header &__item-marker_3 {
-        border-bottom-color: var(--black);
+        border-bottom-color: var(--tabs-marker-color);
     }
 
     &__native-control_3:checked ~ &__content &__containers-tab-content {
@@ -90,7 +90,7 @@
     }
 
     &__native-control_4:checked ~ &__header &__item-marker_4 {
-        border-bottom-color: var(--black);
+        border-bottom-color: var(--tabs-marker-color);
     }
 
     &__native-control_4:checked ~ &__content &__templates-tab-content {
@@ -98,7 +98,7 @@
     }
 
     &__native-control_html:checked ~ &__header &__item-marker_html {
-        border-bottom-color: var(--black);
+        border-bottom-color: var(--tabs-marker-color);
     }
 
     &__native-control_html:checked ~ &__content &__html-tab-content {
@@ -106,7 +106,7 @@
     }
 
     &__native-control_css:checked ~ &__header &__item-marker_css {
-        border-bottom-color: var(--black);
+        border-bottom-color: var(--tabs-marker-color);
     }
 
     &__native-control_css:checked ~ &__content &__css-tab-content {

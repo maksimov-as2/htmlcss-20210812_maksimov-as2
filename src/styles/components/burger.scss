@@ -1,10 +1,14 @@
 .burger {
     position: relative;
-    z-index: 1;
     box-sizing: border-box;
-    width: 0px;
-    height: 0px;
 
+    &__icon-close {
+        width: 24px;
+        height: 24px;
+        background: var(--card-background);
+        color: var(--default-text-color);
+        border-radius: 24px;
+    }
     &__button {
         position: absolute;
         left: 16px;
@@ -15,23 +19,10 @@
         border: none;
         background-color: transparent;
         cursor: pointer;
-        display: none;
-        justify-items: center;
+        display: grid;
         align-items: center;
+        justify-items: center;
     }
-
-    &__icon-open {
-        width: 24px;
-        height: 24px;
-    }
-
-    &__icon-close {
-        width: 24px;
-        height: 24px;
-        background: var(--grey-2);
-        border-radius: 24px;
-    }
-
     &__content {
         display: none;
         position: fixed;
@@ -40,25 +31,26 @@
         width: 100vw;
         height: 100vh;
         transform: translateX(-100vw);
-        transition: transform 250ms ease-in-out;
+        transition: -webkit-transform 250ms ease-in-out;
+        @include mobile {
+            display: block;
+        }
     }
-
     &__items {
-        z-index: 1;
         margin-top: 64px;
-        height: 100%;
+        height: calc(100% - 64px);
         padding: 24px 16px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         flex-direction: column;
         gap: 16px;
-        background: var(--white);
+        background: var(--card-background);
     }
-
     &__title {
         @include font(normal, normal, 20px, 26px);
-        color: var(--grey-3);
+        color: var(--default-text-color);
     }
-
     &__item {
         display: block;
         border: none;
@@ -66,23 +58,13 @@
         cursor: pointer;
         @include font(normal, normal, 16px, 24px);
         text-align: left;
-        color: var(--black);
-    }
+        color: var(--default-text-color);
 
-    &__item:hover {
-        color: var(--orange);
+        &:hover {
+            color: var(--hover-text-color);
+        }
     }
-
     &__content[data-open] {
         transform: translateX(0vw);
-    }
-
-    @include mobile {
-        &__button {
-            display: grid;
-        }
-        &__content {
-            display: block;
-        }
     }
 }
