@@ -61,7 +61,15 @@
         color: var(--default-text-color);
 
         &:hover {
-            color: var(--hover-text-color);
+            filter: brightness(2);
+        }
+
+        &_selected {
+            color: var(--active-menu-item-color);
+
+            &:hover {
+                filter: brightness(1.2);
+            }
         }
     }
     &__content[data-open] {

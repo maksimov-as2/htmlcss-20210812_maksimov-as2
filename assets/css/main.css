@@ -30,8 +30,8 @@
     --card-background: var(--white);
     --default-text-color: var(--black);
     --disabled-text-color: var(--grey-2);
-    --hover-text-color: var(--grey-2a);
     --tabs-marker-color: var(--black);
+    --active-menu-item-color: var(--orange);
 
     --error: var(--red);
     --success: var(--blue-1);
@@ -49,7 +49,6 @@
     --layout-background: var(--grey-4);
     --card-background: var(--black);
     --default-text-color: var(--grey-6);
-    --hover-text-color: var(--grey-2a);
     --disabled-text-color: var(--grey-2);
     --tabs-marker-color: var(--grey-2);
 }
