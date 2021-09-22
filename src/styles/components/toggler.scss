@@ -38,6 +38,7 @@
         width: var(--icon-diam);
         height: var(--icon-diam);
         border-radius: var(--icon-diam);
+        transition: left 0.2s ease;
     }
 
     &__text {

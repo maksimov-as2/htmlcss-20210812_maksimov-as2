@@ -15,7 +15,7 @@
         border-radius: 12px;
         padding: 32px 48px;
         display: grid;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: auto auto;
         grid-template-areas:
             'demo'
             'code';
@@ -33,10 +33,19 @@
     &__live {
         margin-top: 24px;
         margin-bottom: 24px;
+        display: grid;
+        align-items: center;
+        justify-items: center;
+
+        &_tooltip {
+            height: 100px;
+            align-items: end;
+        }
     }
 
     &__code {
         grid-area: 'code';
+        overflow: hidden;
     }
 
     &__code-layout {

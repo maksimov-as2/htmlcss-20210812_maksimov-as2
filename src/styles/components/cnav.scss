@@ -17,10 +17,18 @@
         background-color: transparent;
         cursor: pointer;
         text-align: left;
-    }
 
-    &__button:hover {
-        color: var(--hover-text-color);
+        &:hover {
+            filter: brightness(2);
+        }
+
+        &_selected {
+            color: var(--active-menu-item-color);
+
+            &:hover {
+                filter: brightness(1.2);
+            }
+        }
     }
 
     &__delimiter {
