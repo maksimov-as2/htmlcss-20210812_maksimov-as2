@@ -1,6 +1,11 @@
 .ava {
-    width: 104px;
-    height: 104px;
+    width: 160px;
+    height: 160px;
+
+    @include mobile {
+        width: 116px;
+        height: 116px;
+    }
 
     &__img {
         width: 100%;
