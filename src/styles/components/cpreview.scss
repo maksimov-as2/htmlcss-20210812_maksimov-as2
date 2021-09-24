@@ -41,6 +41,33 @@
             height: 100px;
             align-items: end;
         }
+
+        &_elements {
+            justify-items: left;
+            row-gap: 24px;
+            grid-template-areas: "rn cn tn"
+                                 "rs cs ts"
+                                 "rd cd td"
+                                 "in in ."
+                                 "ie ie ."
+                                 "is is ."
+            ;
+            @include mobile {
+                grid-template-areas:"rn"
+                                    "rs" 
+                                    "rd"
+                                    "cn" 
+                                    "cs" 
+                                    "cd"
+                                    "tn" 
+                                    "ts" 
+                                    "td"
+                                    "in"
+                                    "ie"
+                                    "is"
+                ;
+            }
+        }
     }
 
     &__code {
