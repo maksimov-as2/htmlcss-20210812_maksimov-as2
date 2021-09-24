@@ -26,9 +26,9 @@
         &_2x2 {
             grid-template-columns: auto auto;
             grid-template-rows: auto auto;
-            grid-template-areas: "c11 c12"
-                                 "c21 c22"
-            ;
+            grid-template-areas:
+                'c11 c12'
+                'c21 c22';
             justify-items: left;
             justify-content: center;
             align-content: center;
@@ -37,11 +37,11 @@
             @include mobile {
                 grid-template-columns: auto;
                 grid-template-rows: auto auto auto auto;
-                grid-template-areas: "c11"
-                                     "c21"
-                                     "c12"
-                                     "c22"
-                ;
+                grid-template-areas:
+                    'c11'
+                    'c21'
+                    'c12'
+                    'c22';
                 row-gap: 8px;
                 column-gap: 8px;
             }
