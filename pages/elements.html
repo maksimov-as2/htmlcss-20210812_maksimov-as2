@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<!-- Главная страница -->
+<html lang="ru">
+    <head>
+        <link
+            rel="stylesheet"
+            href="https://highlightjs.org/static/demo/styles/github.css"
+        />
+        <link rel="stylesheet" href="../build/cpage.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+        <script
+            defer
+            src="../09-lection7/01-burger-menu/burger-menu.js"
+        ></script>
+        <script
+            defer
+            src="../10-lection8/01-theme-changer/theme-changer.js"
+        ></script>
+    </head>
+    <body>
+        <div class="ipage ipage_slim">
+            <header class="iheader iheader_slim">
+                <div class="ipage__box">
+                    <div class="ipage__space-between-container">
+                        <button
+                            class="mobile-menu-button"
+                            id="burger-menu-open"
+                        >
+                            <svg class="mobile-menu-button__icon">
+                                <use
+                                    xlink:href="../../assets/images/svg-sprite.svg#open-mobile-menu"
+                                ></use>
+                            </svg>
+                        </button>
+                        <svg class="iheader__logo">
+                            <use
+                                xlink:href="../../assets/images/svg-sprite.svg#sq"
+                            ></use>
+                            <use
+                                xlink:href="../../assets/images/svg-sprite.svg#ci"
+                            ></use>
+                            <use
+                                xlink:href="../../assets/images/svg-sprite.svg#tr"
+                            ></use>
+                        </svg>
+                        <label class="theme-picker" id="theme-changer">
+                            <div class="theme-picker__sun-icon">
+                                <svg class="theme-picker__sun-svg">
+                                    <use
+                                        xlink:href="../../assets/images/svg-sprite.svg#sun"
+                                    ></use>
+                                </svg>
+                            </div>
+                            <div class="tgl">
+                                <input type="checkbox" class="tgl__native" />
+                                <div class="tgl__override">
+                                    <div class="tgl__icon-box">
+                                        <div class="tgl__checked-icon"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="theme-picker__moon-icon">
+                                <svg class="theme-picker__moon-svg">
+                                    <use
+                                        xlink:href="../../assets/images/svg-sprite.svg#moon"
+                                    ></use>
+                                </svg>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+            </header>
+            <main class="imain">
+                <div class="ipage__box-slim-mobile">
+                    <div class="cpreview">
+                        <div class="cnav cpreview__nav">
+                            <div class="cnav__title">Components</div>
+                            <button
+                                class="cnav__button"
+                                onclick="location.href='./modal.html'"
+                            >
+                                Modal
+                            </button>
+                            <button
+                                class="cnav__button"
+                                onclick="location.href='./tooltip.html'"
+                            >
+                                Tooltip
+                            </button>
+                            <button
+                                class="cnav__button"
+                                onclick="location.href='./avatar.html'"
+                            >
+                                Avatar
+                            </button>
+                            <button
+                                class="cnav__button"
+                                onclick="location.href='./calendar.html'"
+                            >
+                                Calendar
+                            </button>
+                            <button
+                                class="cnav__button"
+                                onclick="location.href='./histogram.html'"
+                            >
+                                Histogram
+                            </button>
+                            <button
+                                class="cnav__button cnav__button_selected"
+                                onclick="location.href='./elements.html'"
+                            >
+                                Custom form elements
+                            </button>
+                            <div class="cnav__delimiter"></div>
+                            <button
+                                class="cnav__button"
+                                onclick="location.href='../'"
+                            >
+                                Main page
+                            </button>
+                        </div>
+                        <div class="cpreview__content">
+                            <div class="cpreview__demo">
+                                <div class="cpreview__title">
+                                    Custom form elements
+                                </div>
+                                <div
+                                    class="
+                                        cpreview__live cpreview__live_elements
+                                    "
+                                >
+                                    <div style="grid-area: rn">
+                                        <label class="rad">
+                                            <input
+                                                type="radio"
+                                                class="rad__native"
+                                                name="param1"
+                                            />
+                                            <div class="rad__override">
+                                                <div class="rad__icon-box">
+                                                    <div
+                                                        class="
+                                                            rad__checked-icon
+                                                        "
+                                                    ></div>
+                                                </div>
+                                                <div class="rad__text">
+                                                    Default
+                                                </div>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div style="grid-area: cn">
+                                        <label class="cbx">
+                                            <input
+                                                type="checkbox"
+                                                class="cbx__native"
+                                            />
+                                            <div class="cbx__override">
+                                                <div class="cbx__icon-box">
+                                                    <svg
+                                                        class="
+                                                            cbx__checked-icon
+                                                        "
+                                                    >
+                                                        <use
+                                                            xlink:href="../../assets/images/svg-sprite.svg#checked"
+                                                        ></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="cbx__text">
+                                                    Default
+                                                </div>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div style="grid-area: tn">
+                                        <label class="tgl">
+                                            <input
+                                                type="checkbox"
+                                                class="tgl__native"
+                                                name="param1"
+                                            />
+                                            <div class="tgl__override">
+                                                <div class="tgl__icon-box">
+                                                    <div
+                                                        class="
+                                                            tgl__checked-icon
+                                                        "
+                                                    ></div>
+                                                </div>
+                                                <div class="tgl__text">Off</div>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div style="grid-area: rs">
+                                        <label class="rad">
+                                            <input
+                                                type="radio"
+                                                class="rad__native"
+                                                name="param1"
+                                                checked
+                                            />
+                                            <div class="rad__override">
+                                                <div class="rad__icon-box">
+                                                    <div
+                                                        class="
+                                                            rad__checked-icon
+                                                        "
+                                                    ></div>
+                                                </div>
+                                                <div class="rad__text">
+                                                    Selected
+                                                </div>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div style="grid-area: cs">
+                                        <label class="cbx">
+                                            <input
+                                                type="checkbox"
+                                                class="cbx__native"
+                                                checked
+                                            />
+                                            <div class="cbx__override">
+                                                <div class="cbx__icon-box">
+                                                    <svg
+                                                        class="
+                                                            cbx__checked-icon
+                                                        "
+                                                    >
+                                                        <use
+                                                            xlink:href="../../assets/images/svg-sprite.svg#checked"
+                                                        ></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="cbx__text">
+                                                    Checked
+                                                </div>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div style="grid-area: ts">
+                                        <label class="tgl">
+                                            <input
+                                                type="checkbox"
+                                                class="tgl__native"
+                                                name="param1"
+                                                checked
+                                            />
+                                            <div class="tgl__override">
+                                                <div class="tgl__icon-box">
+                                                    <div
+                                                        class="
+                                                            tgl__checked-icon
+                                                        "
+                                                    ></div>
+                                                </div>
+                                                <div class="tgl__text">On</div>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div style="grid-area: rd">
+                                        <label class="rad">
+                                            <input
+                                                type="radio"
+                                                class="rad__native"
+                                                name="param1"
+                                                disabled
+                                            />
+                                            <div class="rad__override">
+                                                <div class="rad__icon-box">
+                                                    <div
+                                                        class="
+                                                            rad__checked-icon
+                                                        "
+                                                    ></div>
+                                                </div>
+                                                <div class="rad__text">
+                                                    Disabled
+                                                </div>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div style="grid-area: cd">
+                                        <label class="cbx">
+                                            <input
+                                                type="checkbox"
+                                                class="cbx__native"
+                                                disabled
+                                            />
+                                            <div class="cbx__override">
+                                                <div class="cbx__icon-box">
+                                                    <svg
+                                                        class="
+                                                            cbx__checked-icon
+                                                        "
+                                                    >
+                                                        <use
+                                                            xlink:href="../../assets/images/svg-sprite.svg#checked"
+                                                        ></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="cbx__text">
+                                                    Disabled
+                                                </div>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div style="grid-area: td">
+                                        <label class="tgl">
+                                            <input
+                                                type="checkbox"
+                                                class="tgl__native"
+                                                name="param1"
+                                                disabled
+                                            />
+                                            <div class="tgl__override">
+                                                <div class="tgl__icon-box">
+                                                    <div
+                                                        class="
+                                                            tgl__checked-icon
+                                                        "
+                                                    ></div>
+                                                </div>
+                                                <div class="tgl__text">
+                                                    Disabled
+                                                </div>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div style="grid-area: in">
+                                        <label class="fld">
+                                            <input
+                                                type="text"
+                                                class="fld__input-box"
+                                                name="param1"
+                                                placeholder="Placeholder"
+                                            />
+                                            <svg class="fld__icon-success">
+                                                <use
+                                                    xlink:href="../../assets/images/svg-sprite.svg#success"
+                                                ></use>
+                                            </svg>
+                                            <svg class="fld__icon-error">
+                                                <use
+                                                    xlink:href="../../assets/images/svg-sprite.svg#error"
+                                                ></use>
+                                            </svg>
+                                        </label>
+                                    </div>
+                                    <div style="grid-area: ie">
+                                        <label class="fld">
+                                            <input
+                                                type="text"
+                                                class="
+                                                    fld__input-box
+                                                    fld__input-box_invalid
+                                                "
+                                                name="param1"
+                                                placeholder="Placeholder"
+                                                value="Error"
+                                            />
+                                            <svg class="fld__icon-success">
+                                                <use
+                                                    xlink:href="../../assets/images/svg-sprite.svg#success"
+                                                ></use>
+                                            </svg>
+                                            <svg class="fld__icon-error">
+                                                <use
+                                                    xlink:href="../../assets/images/svg-sprite.svg#error"
+                                                ></use>
+                                            </svg>
+                                        </label>
+                                    </div>
+                                    <div style="grid-area: is">
+                                        <label class="fld">
+                                            <input
+                                                type="text"
+                                                class="
+                                                    fld__input-box
+                                                    fld__input-box_success
+                                                "
+                                                name="param1"
+                                                placeholder="Placeholder"
+                                                value="Success"
+                                            />
+                                            <svg class="fld__icon-success">
+                                                <use
+                                                    xlink:href="../../assets/images/svg-sprite.svg#success"
+                                                ></use>
+                                            </svg>
+                                            <svg class="fld__icon-error">
+                                                <use
+                                                    xlink:href="../../assets/images/svg-sprite.svg#error"
+                                                ></use>
+                                            </svg>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <footer class="ifooter ifooter_slim">
+                <div class="ipage__box">
+                    <div class="ifooter__alt-title">
+                        Reusable component library
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <div class="burger">
+            <div class="burger__content" id="burger-menu">
+                <button class="burger__button" id="burger-menu-close">
+                    <svg class="burger__icon-close">
+                        <use
+                            xlink:href="../../assets/images/svg-sprite.svg#close"
+                        ></use>
+                    </svg>
+                </button>
+                <div class="burger__items">
+                    <div class="burger__title">Components</div>
+                    <button
+                        class="burger__item"
+                        onclick="location.href='./modal.html'"
+                    >
+                        Modal
+                    </button>
+                    <button
+                        class="burger__item"
+                        onclick="location.href='./tooltip.html'"
+                    >
+                        Tooltip
+                    </button>
+                    <button
+                        class="burger__item"
+                        onclick="location.href='./avatar.html'"
+                    >
+                        Avatar
+                    </button>
+                    <button
+                        class="burger__item"
+                        onclick="location.href='./calendar.html'"
+                    >
+                        Calendar
+                    </button>
+                    <button
+                        class="burger__item"
+                        onclick="location.href='./histogram.html'"
+                    >
+                        Histogram
+                    </button>
+                    <button
+                        class="burger__item burger__item_selected"
+                        onclick="location.href='./elements.html'"
+                    >
+                        Custom form elements
+                    </button>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script>
+        hljs.highlightAll();
+    </script>
+</html>
