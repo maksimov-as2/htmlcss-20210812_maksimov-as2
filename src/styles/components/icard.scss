@@ -12,6 +12,7 @@
     text-decoration: none;
 
     &__content {
+        pointer-events: none;
         flex-grow: 1;
         display: grid;
         align-items: center;

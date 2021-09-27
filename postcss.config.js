@@ -8,6 +8,6 @@ module.exports = {
         require('postcss-advanced-variables'),
         require('autoprefixer'),
         require('postcss-strip-inline-comments'),
-        require('cssnano'),
+        //require('cssnano'),
     ],
 };
