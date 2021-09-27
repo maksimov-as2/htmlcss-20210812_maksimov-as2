@@ -647,7 +647,6 @@ pre code {
     }
 .hgm {
     padding: 16px 24px 24px 24px;
-    background: var(--white);
     border: 1px solid var(--grey-3);
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -663,6 +662,15 @@ pre code {
 .hgm_preview {
         width: 354px;
         height: 185px;
+    }
+.hgm_max-width {
+        width: 100%;
+    }
+@media all and (max-width: 768px) {
+.hgm_compact {
+            padding: 8px;
+            max-height: 116px
+    }
     }
 .hgm__title {
         display: -webkit-box;
@@ -691,8 +699,16 @@ pre code {
         font-weight: normal;
         font-size: 16px;
         line-height: 24px;
-        color: var(--black);
+        color: var(--default-text-color);
         margin-bottom: 3px;
+    }
+@media all and (max-width: 768px) {
+.hgm__counters-title_compact {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 10px;
+        line-height: 12px
+        }
     }
 .hgm__counters-data {
         margin-bottom: 3px;
@@ -700,7 +716,15 @@ pre code {
         font-weight: normal;
         font-size: 20px;
         line-height: 26px;
-        color: var(--black);
+        color: var(--default-text-color);
+    }
+@media all and (max-width: 768px) {
+.hgm__counters-data_compact {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px
+        }
     }
 .hgm__graph {
         height: 100px;
@@ -725,6 +749,14 @@ pre code {
 .hgm__link {
         text-decoration: none;
         color: var(--blue);
+    }
+@media all and (max-width: 768px) {
+.hgm__link_compact {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 10px;
+        line-height: 12px
+        }
     }
 .fld {
     display: inline-block;
@@ -838,8 +870,10 @@ pre code {
     background: rgba(196, 196, 196, 0.5);
     z-index: 1;
 }
-.mw_compact-and-visible {
+.mw_visible {
         display: block;
+    }
+.mw_compact {
         position: relative;
         z-index: unset;
         background: transparent;
@@ -859,39 +893,16 @@ pre code {
         border-radius: 8px;
         padding: 32px 40px;
     }
-.mw_compact-and-visible  .mw__window {
-        width: 80%;
-        height: 80%;
-        padding: 16px;
-        border: 1px solid var(--grey-2);
-    }
+.mw__window_compact {
+            width: 80%;
+            height: 80%;
+            padding: 16px;
+            border: 1px solid var(--grey-3);
+        }
 @media all and (max-width: 768px) {
-.mw_compact-and-visible  .mw__window {
-            padding: 8px
-    }
-    }
-@media all and (max-width: 768px) {
-.mw_compact-and-visible  .mw__title {
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 24px;
-        margin-bottom: 8px
-    }
-    }
-@media all and (max-width: 768px) {
-.mw_compact-and-visible  .mw__text {
-        font-style: normal;
-        font-weight: normal;
-        font-size: 10px;
-        line-height: 12px
-    }
-    }
-@media all and (max-width: 768px) {
-.mw_compact-and-visible  .mw__close-button  {
-            right: 8px;
-            top: 8px
-    }
+.mw__window_compact {
+                padding: 8px
+        }
     }
 .mw__title {
         font-style: normal;
@@ -901,12 +912,29 @@ pre code {
         color: var(--default-text-color);
         margin-bottom: 16px;
     }
+@media all and (max-width: 768px) {
+.mw__title_compact {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 16px;
+                margin-bottom: 8px
+        }
+    }
 .mw__text {
         font-style: normal;
         font-weight: normal;
         font-size: 16px;
         line-height: 24px;
         color: var(--default-text-color);
+    }
+@media all and (max-width: 768px) {
+.mw__text_compact {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 10px;
+        line-height: 12px
+        }
     }
 .mw__close-button {
         position: absolute;
@@ -920,9 +948,20 @@ pre code {
         background-color: transparent;
         cursor: pointer;
     }
+@media all and (max-width: 768px) {
+.mw__close-button_compact {
+                right: 4px;
+                top: 4px
+        }
+    }
 .mw__close-icon {
         width: 24px;
         height: 24px;
+    }
+@media all and (max-width: 768px) {
+.mw__close-icon_compact {
+                scale: 0.8
+        }
     }
 .rad {
     -webkit-box-sizing: border-box;
@@ -1329,7 +1368,7 @@ pre code {
         border-radius: 8px;
         -ms-flex-preferred-size: 164px;
             flex-basis: 164px;
-        padding: 0px
+        padding: 8px
 }
     }
 .icard__flex-cell {

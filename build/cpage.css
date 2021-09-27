@@ -647,7 +647,6 @@ pre code {
     }
 .hgm {
     padding: 16px 24px 24px 24px;
-    background: var(--white);
     border: 1px solid var(--grey-3);
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -663,6 +662,9 @@ pre code {
 .hgm_preview {
         width: 354px;
         height: 185px;
+    }
+.hgm_max-width {
+        width: 100%;
     }
 .hgm__title {
         display: -webkit-box;
@@ -691,7 +693,7 @@ pre code {
         font-weight: normal;
         font-size: 16px;
         line-height: 24px;
-        color: var(--black);
+        color: var(--default-text-color);
         margin-bottom: 3px;
     }
 .hgm__counters-data {
@@ -700,7 +702,7 @@ pre code {
         font-weight: normal;
         font-size: 20px;
         line-height: 26px;
-        color: var(--black);
+        color: var(--default-text-color);
     }
 .hgm__graph {
         height: 100px;
@@ -838,13 +840,15 @@ pre code {
     background: rgba(196, 196, 196, 0.5);
     z-index: 1;
 }
-.mw_visible {
+.mw_compact-and-visible {
         display: block;
         position: relative;
-        background: transparent;
         z-index: unset;
+        background: transparent;
     }
 .mw__window {
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -856,6 +860,40 @@ pre code {
         background: var(--card-background);
         border-radius: 8px;
         padding: 32px 40px;
+    }
+.mw_compact-and-visible  .mw__window {
+        width: 80%;
+        height: 80%;
+        padding: 16px;
+        border: 1px solid var(--grey-2);
+    }
+@media all and (max-width: 768px) {
+.mw_compact-and-visible  .mw__window {
+            padding: 8px
+    }
+    }
+@media all and (max-width: 768px) {
+.mw_compact-and-visible  .mw__title {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 8px
+    }
+    }
+@media all and (max-width: 768px) {
+.mw_compact-and-visible  .mw__text {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 10px;
+        line-height: 12px
+    }
+    }
+@media all and (max-width: 768px) {
+.mw_compact-and-visible  .mw__close-button  {
+            right: 8px;
+            top: 8px
+    }
     }
 .mw__title {
         font-style: normal;
