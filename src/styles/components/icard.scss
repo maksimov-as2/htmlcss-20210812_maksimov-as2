@@ -12,6 +12,7 @@
     text-decoration: none;
 
     &__content {
+        pointer-events: none;
         flex-grow: 1;
         display: grid;
         align-items: center;
@@ -102,7 +103,7 @@
         height: 210px; /* temporary */
         border-radius: 8px;
         flex-basis: 164px;
-        padding: 0px;
+        padding: 8px;
     }
 
     &__flex-cell {

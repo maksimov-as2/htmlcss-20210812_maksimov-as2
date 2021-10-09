@@ -7,28 +7,64 @@
     height: 100%;
     display: none;
     background: rgba(196, 196, 196, 0.5);
+    z-index: 1;
+
+    &_visible {
+        display: block;
+    }
+
+    &_compact {
+        position: relative;
+        z-index: unset;
+        background: transparent;
+    }
 
     &__window {
+        box-sizing: border-box;
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        width: 428px;
-        height: 294px;
+        max-width: 428px;
+        width: 80%;
         background: var(--card-background);
         border-radius: 8px;
         padding: 32px 40px;
+
+        &_compact {
+            width: 80%;
+            height: 80%;
+            padding: 16px;
+            border: 1px solid var(--grey-3);
+
+            @include mobile {
+                padding: 8px;
+            }
+        }
     }
 
     &__title {
         @include font(normal, 600, 20px, 24px);
-        color: #334d6e;
+        color: var(--default-text-color);
         margin-bottom: 16px;
+
+        &_compact {
+            @include mobile {
+                @include font(normal, normal, 14px, 16px);
+                margin-bottom: 8px;
+            }
+        }
     }
 
     &__text {
         @include font(normal, normal, 16px, 24px);
         color: var(--default-text-color);
+
+        &_compact {
+            @include mobile {
+                @include font(normal, normal, 10px, 12px);
+            }
+        }
     }
 
     &__close-button {
@@ -42,10 +78,23 @@
         border: none;
         background-color: transparent;
         cursor: pointer;
+
+        &_compact {
+            @include mobile {
+                right: 4px;
+                top: 4px;
+            }
+        }
     }
 
     &__close-icon {
         width: 24px;
         height: 24px;
+
+        &_compact {
+            @include mobile {
+                scale: 0.8;
+            }
+        }
     }
 }

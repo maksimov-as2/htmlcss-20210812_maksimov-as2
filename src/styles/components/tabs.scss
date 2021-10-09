@@ -35,6 +35,7 @@
         color: var(--default-text-color);
         white-space: nowrap;
         border-bottom: 5px solid transparent;
+        cursor: pointer;
     }
 
     &__elements-tab-content {

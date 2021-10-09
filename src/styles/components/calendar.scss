@@ -1,6 +1,5 @@
 .ical {
     padding: 28px;
-    background: var(--white);
     border: 1px solid var(--grey-3);
     box-sizing: border-box;
     border-radius: 8px;
@@ -9,11 +8,25 @@
         width: 304px;
     }
 
+    &_compact {
+        height: 100%;
+        @include mobile {
+            padding: 16px;
+        }
+    }
+
     &__title {
         @include font(normal, 600, 20px, 24px);
-        color: var(--grey-5);
+        color: var(--default-text-color);
         text-align: center;
         padding-bottom: 24px;
+
+        &_compact {
+            @include mobile {
+                @include font(normal, normal, 12px, 10px);
+                padding-bottom: 8px;
+            }
+        }
     }
 
     &__wrapper {
@@ -41,20 +54,30 @@
     }
 
     &__item_header {
-        font-style: normal;
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 20px;
+        @include font(normal, normal, 14px, 20px);
         color: var(--grey-5a);
+    }
+
+    &__item_header-compact {
+        @include font(normal, normal, 10px, 12px);
+
+        @include mobile {
+            @include font(normal, normal, 6px, 8px);
+        }
     }
 
     &__item_data {
         font-family: Source Sans Pro, sans-serif;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 20px;
-        color: var(--grey-5);
+        @include font(normal, normal, 16px, 20px);
+        color: var(--default-text-color);
+    }
+
+    &__item_data-compact {
+        @include font(normal, normal, 10px, 12px);
+
+        @include mobile {
+            @include font(normal, normal, 6px, 8px);
+        }
     }
 
     &__item_selection-point {
